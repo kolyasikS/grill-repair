@@ -1,0 +1,41 @@
+@import 'src/assets/styles/mixins';
+@import 'src/assets/fonts/stylesheet.css';
+
+.header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+.header__logo {
+    position: absolute;
+    background: #fff;
+    padding: 15px;
+    border-radius: 50%;
+}
+.nav__wrapper {
+    padding-left: 200px;
+}
+.nav {
+    @include flexCenter;
+    font-weight: 500;
+}
+
+.header__options {
+    @include flexCenter();
+    gap: 32px;
+}
+.header__optionsIcons {
+    @include flexCenter();
+    gap: 16px;
+
+    svg {
+        cursor: pointer;
+    }
+}
