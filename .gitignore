@@ -23,5 +23,5 @@ yarn-debug.log*
 yarn-error.log*
 
 jsconfig.json
-scripts
-config
+/scripts
+/config
