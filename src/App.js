@@ -1,14 +1,20 @@
 import '@assets/styles/global.css';
-import Home from "./pages/home/Home";
+import Introduction from "./pages/home/introduction/Introduction";
 import {Container} from "@mui/material";
+import WhyImportant from "./pages/home/whyImportant/WhyImportant";
+import BestChoice from "./pages/home/bestChoice/BestChoice";
+import Equipments from "./pages/home/equipments/Equipments";
+import Services from "./pages/home/services/Services";
 
 function App() {
     return (
         <main>
-            <Container maxWidth={'lg'}>
-                <Home/>
-                <div className={'h-[100px]'}></div>
-            </Container>
+            <Introduction/>
+            <WhyImportant/>
+            <BestChoice/>
+            <Equipments/>
+            <Services/>
+            <div className={'h-[1000px]'}></div>
         </main>
     );
 }

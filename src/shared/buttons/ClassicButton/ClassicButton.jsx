@@ -1,9 +1,13 @@
 import React from 'react';
 import styles from './index.module.scss';
 const ClassicButton = ({children, color, bgColor,
-                       borderRadius, py, px, border,
-                       uppercase, discount, fontFamily,
-                       fontWeight, display, fontSize}) => {
+                           borderRadius = 55,
+                           py = 16,
+                           px = 24, border,
+                           uppercase, discount, fontFamily,
+                           fontWeight, display,
+                           fontSize = 16
+                        }) => {
     return (
         <button className={styles.button} style={{
             display,

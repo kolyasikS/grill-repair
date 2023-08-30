@@ -1,0 +1,17 @@
+.section {
+    padding: 140px 0;
+}
+
+.section__title {
+    color: #181B3F;
+    text-align: center;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+
+    margin-bottom: 64px;
+    span {
+        color: #BC1922;
+    }
+}
