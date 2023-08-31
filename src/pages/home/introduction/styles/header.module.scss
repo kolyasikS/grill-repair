@@ -17,6 +17,7 @@
     position: absolute;
     background: #fff;
     padding: 15px;
+    left: 40px;
     border-radius: 50%;
 }
 .nav__wrapper {
@@ -37,5 +38,51 @@
 
     svg {
         cursor: pointer;
+    }
+}
+
+
+.header__burger {
+    @include flexCenter(true);
+    position: relative;
+    gap: 5px;
+    cursor: pointer;
+    padding: 5px;
+    span {
+        position: relative;
+        height: 0.16rem;
+        background: #000;
+        width: 24px;
+        border-radius: 40%;
+    }
+    span:nth-child(2) {
+    }
+}
+.header__adaptive {
+
+}
+
+@media screen and (max-width: 1200px) {
+    .header {
+        height: 100px;
+        justify-content: flex-end;
+    }
+    .nav__wrapper, .header__options {
+        display: none;
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 640px) {
+    .header {
+        padding: 0 15px;
+    }
+    .header__logo {
+        top: 40px;
+        left: 15px;
+        padding: 10px;
+        svg {
+            width: 80px;
+            height: 80px;
+        }
     }
 }

@@ -19,7 +19,7 @@ function App() {
         <main>
             <Introduction/>
             <WhyImportant/>
-            <BestChoice/>
+            {/*<BestChoice/>
             <Equipments/>
             <Services/>
             <ContactUs/>
@@ -29,7 +29,7 @@ function App() {
             <Offers/>
             <Promises/>
             <AboutUs/>
-            <Footer/>
+            <Footer/>*/}
         </main>
     );
 }

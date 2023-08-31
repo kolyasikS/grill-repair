@@ -1,13 +1,14 @@
 import React from 'react';
-import {Link, Button} from "@mui/material";
+import {Link, Button, Stack, useMediaQuery} from "@mui/material";
 import styles from './styles/header.module.scss';
 
 import {ReactComponent as TelegramIcon} from '@assets/svgs/homePage/telegram.svg';
 import {ReactComponent as ViberIcon} from '@assets/svgs/homePage/viber.svg';
 import {ReactComponent as Logo} from '@assets/svgs/homePage/logo.svg'
 import HeaderLink from "./HeaderLink";
-import {ClassicButton} from "../../../shared/buttons/api";
+import {ClassicButton, DarkRedCBtn, LightRedCBtn} from "../../../shared/buttons/api";
 const Header = () => {
+
     return (
         <header className={styles.header}>
             <div className={styles.header__logo}>
@@ -40,6 +41,27 @@ const Header = () => {
                     <ViberIcon/>
                 </div>
             </div>
+            <Stack direction={'row'}
+                   alignItems={'center'}
+                   display={{
+                       lg: 'none'
+                   }}
+                   spacing={{
+                       xs: 2,
+                       md: 3
+                   }} className={styles.header__adaptive}
+            >
+                <DarkRedCBtn px={20}
+                             fontSize={14}
+                             py={12}>
+                    Book grill cleaning
+                </DarkRedCBtn>
+                <div className={styles.header__burger}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </Stack>
         </header>
     );
 };

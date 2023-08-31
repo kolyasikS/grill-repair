@@ -7,8 +7,8 @@ const ClassicButton = ({children, color, bgColor,
                            uppercase = true,
                            discount, fontFamily,
                            fontWeight = 800,
-                           display,
-                           fontSize = 16
+                           display, className,
+                           fontSize = 16,
                         }) => {
     console.log(discount);
     const discountStyle = discount && (discount.type === 'black' ? {
@@ -22,7 +22,7 @@ const ClassicButton = ({children, color, bgColor,
     });
 
     return (
-        <button className={styles.button} style={{
+        <button className={`${styles.button} ${className}`} style={{
             display,
             background: bgColor,
             borderRadius,
