@@ -11,6 +11,8 @@ import Reviews from "./pages/home/reviews/Reviews";
 import Brands from "./pages/home/brands/Brands";
 import Offers from "./pages/home/offers/Offers";
 import Promises from "./pages/home/promises/Promises";
+import AboutUs from "./pages/home/aboutUs/AboutUs";
+import {Footer} from "@widgets/api";
 
 function App() {
     return (
@@ -26,7 +28,8 @@ function App() {
             <Brands/>
             <Offers/>
             <Promises/>
-            <div className={'h-[1000px]'}></div>
+            <AboutUs/>
+            <Footer/>
         </main>
     );
 }

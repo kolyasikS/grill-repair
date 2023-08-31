@@ -5,15 +5,7 @@ const LightRedCb = ({discount, ...props}) => {
     return (
         <ClassicButton
             {...props}
-            discount={discount && (discount.type === 'black' ? {
-                value: discount.value,
-                bgColor: '#000',
-                color: '#fff'
-            } : {
-                value: discount.value,
-                bgColor: '#BC1922',
-                color: '#fff'
-            })}
+            discount={discount}
             color={'#fff'}
             bgColor={'#EE353F'}
         >

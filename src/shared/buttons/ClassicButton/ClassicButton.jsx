@@ -4,13 +4,23 @@ const ClassicButton = ({children, color, bgColor,
                            borderRadius = 55,
                            py = 16,
                            px = 24, border,
-                           uppercase,
+                           uppercase = true,
                            discount, fontFamily,
                            fontWeight = 800,
                            display,
                            fontSize = 16
                         }) => {
     console.log(discount);
+    const discountStyle = discount && (discount.type === 'black' ? {
+        value: discount.value,
+        bgColor: '#000',
+        color: '#fff'
+    } : {
+        value: discount.value,
+        bgColor: '#BC1922',
+        color: '#fff'
+    });
+
     return (
         <button className={styles.button} style={{
             display,
@@ -22,15 +32,15 @@ const ClassicButton = ({children, color, bgColor,
             paddingBottom: py,
             border,
         }}>
-            {discount &&
+            {discountStyle &&
                 <span
                     style={{
-                        background: discount.bgColor,
-                        color: discount.color
+                        background: discountStyle.bgColor,
+                        color: discountStyle.color
                     }}
                     className={styles.discount}
                 >
-                    <p>-{discount.value}%</p>
+                    <p>-{discountStyle.value}%</p>
                 </span>
             }
             <p style={{
@@ -38,6 +48,7 @@ const ClassicButton = ({children, color, bgColor,
                 fontFamily,
                 fontWeight,
                 fontSize,
+                lineHeight: '100%',
                 textTransform: uppercase ? 'uppercase' : 'none'
             }}>
                 {children}

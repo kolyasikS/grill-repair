@@ -1,0 +1,32 @@
+@import 'src/assets/styles/mixins';
+
+.footer {
+    padding: 30px 40px;
+}
+
+.footer__logo {
+
+    svg {
+        width: 90px;
+        height: 90px;
+    }
+}
+.footer__copyright {
+    p {
+        line-height: 100%;
+    }
+}
+
+.footer__privacy {
+    display: flex;
+    gap: 40px;
+}
+
+.footer__caption {
+    color: #4a4a4a;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
