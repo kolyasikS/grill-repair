@@ -1,20 +1,19 @@
 import React from 'react';
 import ClassicButton from "./ClassicButton";
 
-const LightRedCb = (props) => {
-
+const LightRedCb = ({discount, ...props}) => {
     return (
         <ClassicButton
             {...props}
-            discount={props.discount.type === 'black' ? {
-                value: props.discount.value,
+            discount={discount && (discount.type === 'black' ? {
+                value: discount.value,
                 bgColor: '#000',
                 color: '#fff'
             } : {
-                value: props.discount.value,
+                value: discount.value,
                 bgColor: '#BC1922',
                 color: '#fff'
-            }}
+            })}
             color={'#fff'}
             bgColor={'#EE353F'}
         >

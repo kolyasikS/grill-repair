@@ -1,0 +1,30 @@
+@import "src/assets/styles/mixins";
+
+.section {
+    padding: 140px 0;
+    background: url("../../../../assets/images/homePage/reviews-bg.jpg") no-repeat center;
+    background-size: cover;
+    position: relative;
+    @include shadowBg(0.4);
+}
+
+.section__inner {
+    @include flexCenter(true)
+}
+
+.section__title {
+    @include sectionTitle();
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    z-index: 1;
+    text-align: center;
+}
+
+.section__subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 1;
+}

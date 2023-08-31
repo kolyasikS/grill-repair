@@ -4,10 +4,13 @@ const ClassicButton = ({children, color, bgColor,
                            borderRadius = 55,
                            py = 16,
                            px = 24, border,
-                           uppercase, discount, fontFamily,
-                           fontWeight, display,
+                           uppercase,
+                           discount, fontFamily,
+                           fontWeight = 800,
+                           display,
                            fontSize = 16
                         }) => {
+    console.log(discount);
     return (
         <button className={styles.button} style={{
             display,

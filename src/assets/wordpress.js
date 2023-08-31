@@ -189,3 +189,81 @@ export const ourBonuses = [
         purpose: 'to create a protective coating on the grill surfaces, which helps to prevent rust and corrosion'
     }
 ]
+
+import rebeca from '@assets/images/homePage/rebeca.png';
+import mark from '@assets/images/homePage/mark.png';
+import ashley from '@assets/images/homePage/ashley.png';
+export const ourReviews = [
+    {
+        id: uuid.v4(),
+        name: 'Rebeca Lee',
+        rating: 5,
+        quote: 'Great grill cleaning service! Prompt, professional, and good prices, especially for LA.',
+        image: rebeca
+    },
+    {
+        id: uuid.v4(),
+        name: 'Ashley Levinson',
+        rating: 5,
+        quote: 'Great grill cleaning service! Prompt, professional, and good prices, especially for LA.',
+        image: ashley
+    },
+    {
+        id: uuid.v4(),
+        name: 'Mark Salmon',
+        rating: 5,//“
+        quote: 'Great grill cleaning service! Prompt, professional, and good prices, especially for LA.',
+        image: mark
+    }
+]
+
+export const ourPromises = [
+    {
+        id: uuid.v4(),
+        promise: 'We will stay in touch with you and confirm the date and time of your appointment to ensure that it fits your schedule'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will give you an upfront quote, so you have a clear idea of the cost before we start working on your bbq grill cleaning'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will be available to answer any questions you may have and address any concerns that arise during the service appointment'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will use specialized tools and proven techniques to perform a thorough barbeque cleaning, and we are committed to delivering the best possible results. '
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will clean the components of your grill that don\'t come into contact with your food as much as possible, but some stains, marks, and scuffs may remain due to years of use'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will take extra care while cleaning severely rusted or compromised parts, but please note that we cannot be responsible for any damage that may occur during the cleaning process'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'Our outdoor grill cleaning service includes a thorough cleaning of the gas grate, which removes built-up grease and debris that can affect the flavor of your food.'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We use eco-friendly materials that are safe for outside use and won\'t harm your lawn or garden, and we take extra care to inspect the gas connections and ensure that your grill is operating safely and efficiently.'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We can provide you with a separate quote to replace severely rusted or compromised barbecue components if you inform us ahead of time'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will offer grill repair assistance and if needed and agreed upon'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will treat your surroundings with the utmost care and respect, and make sure that your property is protected during the service appointment'
+    },
+    {
+        id: uuid.v4(),
+        promise: 'We will confirm when the job is done and ensure your complete satisfaction.'
+    },
+]
