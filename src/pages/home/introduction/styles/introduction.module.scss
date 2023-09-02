@@ -5,7 +5,7 @@
     width: 100%;
     min-height: 1000px;
     height: 100vh;
-    justify-content: flex-start;
+    position: relative;
     &::before {
         content: '';
         background-image: url("../../../../assets/images/homePage/bg.jpeg");
@@ -135,18 +135,17 @@
             position: absolute;
             width: 100%;
             height: 200px;
-            bottom: 60px;
+            bottom: -10px;
             background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
         }
     }
     .scheduleBtn {
         position: absolute;
-        bottom: -140%;
+        bottom: -115%;
         z-index: 1;
         width: 100%;
     }
 }
-
 @media screen and (max-width: 400px) {
     .introduction {
         &::after {

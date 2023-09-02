@@ -11,9 +11,22 @@ import {Divider, Stack} from "@mui/material";
 import {UnfilledCBtn} from "@shared/buttons/api";
 const InfoPanel = () => {
     return (
-        <Stack direction={'row'}
-               divider={<Divider orientation={'vertical'}
-                                 color={'#fff'} flexItem/>} className={styles.infoPanel}>
+        <Stack
+            direction={{
+                xs: 'column',
+                md: 'row'
+            }}
+            spacing={{
+                md: 0,
+                xs: 1
+            }}
+            sx={{}}
+            divider={<Divider orientation={{
+                md: 'vertical',
+                xs: 'horizontal'
+            }} color={'#fff'} flexItem/>}
+            className={styles.infoPanel}
+        >
             <div className={styles.infoPanelItem}>
                 <div>
                     <img src={clock} alt=""/>

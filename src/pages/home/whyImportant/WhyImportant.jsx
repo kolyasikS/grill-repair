@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Link, Paper, styled} from "@mui/material";
+import {Container, Link, Paper, Stack, styled} from "@mui/material";
 import {ClassicButton, LightRedCBtn} from "../../../shared/buttons/api";
 import styles from './styles/whyImportant.module.scss';
 import {importantFactors} from "@assets/wordpress";
@@ -14,11 +14,20 @@ const Item = styled(Paper)(({ theme }) => ({
 const WhyImportant = () => {
     return (
         <section className={styles.section}>
-            <Container maxWidth={'lg'}>
+            <Container sx={{
+                maxWidth: {
+                    lg: '1300px',
+                    xs: '95%'
+                }
+            }}>
                 <div className={styles.section__top}>
-                    <h1 className={styles.title}>Grill Cleaning -<br/><span>Why it's so important</span></h1>
+                    <h1 className={styles.section__title}>Grill Cleaning -<br/><span>Why it's so important</span></h1>
                     <ul>
-                        <Grid container columnSpacing={3} rowSpacing={13}  alignItems={'center'}>
+                        <Grid container columnSpacing={3} rowSpacing={{
+                            lg: 13,
+                            xs: 3
+                        }}
+                              alignItems={'center'}>
                             {importantFactors.map(factor =>
                                 <Factor key={factor.id} {...factor}/>
                             )}
@@ -26,7 +35,9 @@ const WhyImportant = () => {
                     </ul>
                 </div>
             </Container>
-            <div className={styles.section__bottom}>
+            <Stack className={styles.section__bottom} direction={{
+                sm: 'row'
+            }} width={'100%'} alignItems={'center'} justifyContent={'center'}>
                 <a href="#" className={styles.section__bottomLink}>
                     <p>Learn more about the importance of keeping your grill clean</p>
                 </a>
@@ -40,7 +51,7 @@ const WhyImportant = () => {
                 >
                     schedule an appointment
                 </LightRedCBtn>
-            </div>
+            </Stack>
         </section>
     );
 };

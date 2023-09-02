@@ -65,8 +65,8 @@ const Introduction = () => {
                         </ClassicButton>
                     </div>
                 </Box>
-                {/*<InfoPanel/>*/}
             </Container>
+            <InfoPanel/>
         </section>
     );
 };

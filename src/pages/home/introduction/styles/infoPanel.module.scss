@@ -8,8 +8,8 @@
     width: 100%;
     max-width: 1200px;
     justify-content: space-between;
-
-    bottom: -220px;
+    align-items: center;
+    bottom: -100px;
 }
 .infoPanelItem {
     display: flex;
@@ -43,4 +43,26 @@
         }
     }
 
+}
+
+@media screen and (max-width: 1200px) {
+    .infoPanel {
+        padding: 20px;
+    }
+    .infoPanelItem {
+        padding: 5px 5px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .infoPanel {
+        bottom: -460px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .infoPanel {
+        bottom: -500px;
+        z-index: 1;
+    }
 }

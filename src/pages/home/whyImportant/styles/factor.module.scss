@@ -25,3 +25,20 @@
     font-weight: 300;
     line-height: 130%;
 }
+
+@media screen and (max-width: 600px) {
+    .factor__image {
+        width: 150px;
+        height: 150px;
+        top: 15px;
+        left: 10px;
+    }
+
+    .factor__title {
+        font-size: 20px;
+    }
+
+    .factor__content {
+        font-size: 14px;
+    }
+}

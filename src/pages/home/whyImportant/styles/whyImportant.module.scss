@@ -22,7 +22,7 @@
         background-image: url("../../../../assets/images/homePage/grill-bg.png");
         background-size: 100%;
         background-repeat: no-repeat;
-        background-position: bottom;
+        background-position: center bottom;
 
         content: '';
         display: block;
@@ -34,7 +34,7 @@
     }
 }
 
-.title {
+.section__title {
     color: #fff;
     text-align: center;
     font-size: 64px;
@@ -50,7 +50,6 @@
 .section__top {
 }
 .section__bottom {
-    @include flexCenter();
     gap: 30px;
     position: relative;
 
@@ -63,4 +62,36 @@
     text-decoration-line: underline;
     line-height: 130%;
     text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    .section {
+        padding-bottom: 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section {
+        padding-top: 600px;
+    }
+    .section__title {
+        text-align: left;
+        margin-bottom: 32px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        min-height: 2400px;
+        &::before {
+            height: 95%;
+        }
+        &::after {
+            height: 95%;
+        }
+        background: #06082a;
+        z-index: 0;
+    }
+    .section__title {
+        font-size: 32px;
+    }
 }
