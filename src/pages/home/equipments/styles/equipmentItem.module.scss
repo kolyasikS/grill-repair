@@ -12,4 +12,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .item__image {
+        width: 70px;
+        height: 70px;
+    }
+    .item__title {
+        font-size: 14px;
+    }
 }

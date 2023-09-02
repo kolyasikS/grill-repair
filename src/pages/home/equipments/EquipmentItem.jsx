@@ -4,18 +4,29 @@ import styles from './styles/equipmentItem.module.scss';
 
 const EquipmentItem = ({image, title}) => {
     return (
-        <Grid xl={6}>
-            <Grid container spacing={0} xl={12}
-                  className={styles.item} alignItems={'center'}
-                  height={180} py={0} px={2} columnSpacing={3}
+        <Grid md={6} sm={12} xs={6}>
+            <Grid container spacing={0} columns={12}
+                  className={styles.item}
+                  justifyContent={'center'}
+                  alignItems={'center'}
+                  height={180} py={0} px={{
+                      md: 2,
+                      xs: 0
+                  }}
+                  columnSpacing={3}
             >
-                <Grid xl={5}>
+                <Grid sm={5} xs={12} container
+                      justifyContent={'center'}
+                      alignItems={'center'}>
                     <img src={image} alt="" className={styles.item__image}
-                         height={240}
-                         width={240}
+                         height={100}
+                         width={100}
                     />
                 </Grid>
-                <Grid container xl={7} alignItems={'center'} spacing={0}>
+                <Grid container sm={7} xs={12}
+                      justifyContent={'center'}
+                      alignItems={'center'}
+                      spacing={0}>
                     <p className={styles.item__title}>{title}</p>
                 </Grid>
             </Grid>

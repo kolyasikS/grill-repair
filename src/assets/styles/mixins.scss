@@ -15,16 +15,17 @@
     line-height: 110%;
 }
 
-@mixin shadowBg($opacity) {
+@mixin shadowBg($opacity, $height: 100%, $left: 0) {
     &::before {
         content: '';
         top: 0;
+        left: $left;
         position: absolute;
         background: #000;
         opacity: $opacity;
         display: block;
         width: 100%;
-        height: 100%;
+        height: $height;
         z-index: 0;
     }
 }

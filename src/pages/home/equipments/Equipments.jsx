@@ -7,11 +7,44 @@ import EquipmentItem from "./EquipmentItem";
 const Equipments = () => {
     return (
         <section className={styles.section}>
-            <Container maxWidth={'lg'} sx={{zIndex: 1}}>
+            <Container sx={{
+                maxWidth: {
+                    lg: '1300px',
+                    xs: '95%'
+                },
+                zIndex: 1
+            }}>
                 <div className={styles.section__inner}>
-                    <h1 className={styles.section__title}>To provide you with the best result we use:</h1>
+                    <div className={styles.section__title_wrapper}>
+                        <h1 className={styles.section__title}>To provide you with the best result we use:</h1>
+                    </div>
                     <ul className={styles.section__list}>
-                        <Grid container ml={3} >
+                        <Grid container
+                              ml={{
+                                  sm: 3,
+                                  xs: 0
+                              }}
+                              pr={{
+                                  sm: 0,
+                                  xs: 3,
+                              }}
+                              columnSpacing={{
+                                  sm: 0,
+                                  xs: 5
+                              }}
+                              rowSpacing={{
+                                  sm: 0,
+                                  xs: 5
+                              }}
+                              py={{
+                                  sm: 0,
+                                  xs: 2
+                              }}
+                              mt={{
+                                  sm: 0,
+                                  xs: 2
+                              }}
+                        >
                             {ourEquipments.map((equip) => <EquipmentItem {...equip}/>)}
                         </Grid>
                     </ul>

@@ -18,11 +18,11 @@ function App() {
     return (
         <main>
             {/*<Introduction/>*/}
-            <WhyImportant/>
-            <BestChoice/>
-            {/*<Equipments/>*/}
-            {/*<Services/>
-            <ContactUs/>
+            {/*<WhyImportant/>*/}
+            {/*<BestChoice/>*/}
+            <Equipments/>
+            <Services/>
+            {/*<ContactUs/>
             <Discover/>
             <Reviews/>
             <Brands/>
