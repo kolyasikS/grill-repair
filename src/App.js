@@ -17,11 +17,11 @@ import {Footer} from "@widgets/api";
 function App() {
     return (
         <main>
-            <Introduction/>
+            {/*<Introduction/>*/}
             <WhyImportant/>
-            {/*<BestChoice/>
-            <Equipments/>
-            <Services/>
+            <BestChoice/>
+            {/*<Equipments/>*/}
+            {/*<Services/>
             <ContactUs/>
             <Discover/>
             <Reviews/>
