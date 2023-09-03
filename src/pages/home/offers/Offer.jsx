@@ -5,14 +5,31 @@ import styles from './styles/offer.module.scss';
 const Offer = ({img, title, colorType = 'white'}) => {
     return (
         <Grid
-            xl={2}
+            lg={2}
+            md={3}
+            sm={4}
+            xs={12}
+            display={'flex'}
+            justifyContent={'center'}
         >
             <Grid
                 gap={3}
                 display={'flex'}
-                flexDirection={'column'}
+                flexDirection={{
+                    sm: 'column',
+                    xs: 'row'
+                }}
                 alignItems={'center'}
-                justifyContent={'center'}
+                justifyContent={{
+                    sm: 'center',
+                    xs: 'flex-start'
+                }}
+                sx={{
+                    padding: {
+                        sm: '',
+                        xs: '16px 32px'
+                    }
+                }}
                 className={`${styles.offer} ${colorType === 'white' ? styles.whiteBg : styles.redBg}`}
             >
                 <img src={img} alt=""/>

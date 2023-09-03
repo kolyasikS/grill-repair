@@ -10,8 +10,17 @@ import maintenance from '@assets/images/homePage/maintenance.png';
 
 const OffersList = () => {
     return (
-        <Grid container columns={10}
+        <Grid container
+              columns={{
+                  sm: 10,
+                  xs: 12
+              }}
+              rowSpacing={{
+                  lg: 0,
+                  xs: 2
+              }}
               zIndex={1} columnSpacing={4}
+              justifyContent={'center'}
               mt={4}
               mb={6}
         >
