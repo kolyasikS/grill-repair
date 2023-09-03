@@ -22,10 +22,10 @@ function App() {
             {/*<BestChoice/>*/}
             {/*<Equipments/>*/}
             {/*<Services/>*/}
-            <ContactUs/>
+            {/*<ContactUs/>*/}
             <Discover/>
             <Reviews/>
-            {/*<Brands/>*/}
+            <Brands/>
             {/*<Offers/>*/}
             {/*<Promises/>*/}
             {/*<AboutUs/>*/}

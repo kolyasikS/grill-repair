@@ -5,18 +5,18 @@ import {Rating} from "@mui/material";
 
 const Review = ({name, image, rating, quote}) => {
     return (
-        <Grid xl={4} zIndex={1}>
-            <Grid container spacing={0} xl={12}
+        <Grid lg={4} xs={12} zIndex={1}>
+            <Grid container spacing={0} columns={12}
                   className={styles.review}
-                  p={4} columnSpacing={2}
+                  p={4} columnSpacing={2} flexWrap={'nowrap'}
             >
-                <Grid xl={3}>
+                <Grid xs={3} pl={0}>
                     <img src={image} alt="" className={styles.review__image}
                          height={80}
                          width={80}
                     />
                 </Grid>
-                <Grid container xl={9} justifyContent={'flex-start'} direction={'column'} spacing={0}>
+                <Grid container xs={9} justifyContent={'flex-start'} direction={'column'} spacing={0}>
                     <p className={styles.review__name}>{name}</p>
                     <Rating readOnly
                             defaultValue={rating}

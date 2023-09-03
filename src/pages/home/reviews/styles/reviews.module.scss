@@ -28,3 +28,30 @@
     font-weight: 400;
     z-index: 1;
 }
+
+.section__stackBtns {
+
+}
+
+@media screen and (max-width: 900px) {
+    .section {
+        padding: 64px 0;
+    }
+    .section__title {
+        font-size: 36px;
+        text-align: left;
+    }
+    .section__subtitle {
+        font-size: 16px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section__stackBtns {
+        width: 100%;
+        & button {
+            width: 100%;
+        }
+    }
+}

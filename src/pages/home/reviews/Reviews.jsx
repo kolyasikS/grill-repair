@@ -5,20 +5,50 @@ import Grid from "@mui/material/Unstable_Grid2";
 import {ourReviews} from "@assets/wordpress";
 import Review from "./Review";
 import {LightRedCBtn, SliderDots, UnfilledCBtn} from "@shared/buttons/api";
-import {Stack} from "@mui/material";
+import {Stack, useMediaQuery} from "@mui/material";
 
 const Reviews = () => {
+    const isMobileSize = useMediaQuery('(max-width: 600px)');
     return (
         <section className={styles.section}>
             <ClassicContainer>
                 <div className={styles.section__inner}>
                     <h1 className={styles.section__title}>here’s what happy customers say about our bbq cleaning service</h1>
                     <p className={styles.section__subtitle}>For ideal annual and bi-annual cleanings, and if you haven't cleaned your grill in more than one year, we recommend a deep cleaning, which includes:</p>
-                    <Grid container my={8} columnSpacing={6}>
-                        {ourReviews.map(review => <Review {...review} key={review.id}/>)}
+                    <Grid container
+                          my={{
+                              md: 8,
+                              xs: 4
+                          }}
+                          justifyContent={'center'}
+                          columnSpacing={{
+                              lg: 8,
+                              xs: 0
+                          }}
+                          rowSpacing={{
+                              lg: 0,
+                              sm: 5
+                          }}
+                    >
+                        {isMobileSize
+                            ? <Review {...ourReviews[0]}/>
+                            : ourReviews.map(review => <Review {...review} key={review.id}/>)
+                        }
                     </Grid>
-                    <SliderDots amount={5} my={64} type={'white'}></SliderDots>
-                    <Stack direction={'row'} spacing={4}>
+                    <SliderDots amount={5}
+                                my={{
+                                    md: 8,
+                                    xs: 4
+                                }}
+                                type={'white'}></SliderDots>
+                    <Stack
+                        direction={{
+                            sm: 'row',
+                            xs: 'column'
+                        }}
+                        spacing={4}
+                        className={styles.section__stackBtns}
+                    >
                         <UnfilledCBtn type={'white'}
                                       uppercase={true}
                                       fontWeight={800}
