@@ -24,29 +24,51 @@ import luxor from '@assets/images/homePage/luxor.png';
 import Brand from "./Brand";
 const BrandsList = () => {
     return (
-        <Grid container columns={14} my={4}
-              columnSpacing={7} rowSpacing={2}>
-            <Brand img={weber}/>
-            <Brand img={bull}/>
-            <Brand img={lion}/>
-            <Brand img={lynx}/>
-            <Brand img={blaze}/>
-            <Brand img={rcs}/>
-            <Brand img={kitchenAid}/>
-            <Brand img={broilKing}/>
-            <Brand img={wolf}/>
-            <Brand img={nexgrill}/>
-            <Brand img={dcs}/>
-            <Brand img={napoleon}/>
-            <Brand img={louisiana}/>
-            <Brand img={traeger}/>
-            <Brand img={firemagic}/>
-            <Brand img={deltaHeat}/>
-            <Brand img={aog}/>
-            <Brand img={viking}/>
-            <Brand img={summerset}/>
-            <Brand img={charBroil}/>
-            <Brand img={luxor}/>
+        <Grid container columns={14}
+              my={{
+                  sm: 4,
+                  xs: 0
+              }}
+              mt={{
+                  xs: 4
+              }}
+              sx={{
+                  minWidth: {
+                      sm: 'fit-content',
+                      xs: '100vw'
+                  }
+              }}
+              justifyContent={'center'}
+              columnSpacing={{
+                      sm: 7,
+                      xs: 3
+              }}
+              rowSpacing={{
+                  sm: 2,
+                  xs: 4
+              }}
+        >
+                <Brand img={weber}/>
+                <Brand img={bull}/>
+                <Brand img={lion}/>
+                <Brand img={lynx}/>
+                <Brand img={blaze}/>
+                <Brand img={rcs}/>
+                <Brand img={kitchenAid}/>
+                <Brand img={broilKing}/>
+                <Brand img={wolf}/>
+                <Brand img={nexgrill}/>
+                <Brand img={dcs}/>
+                <Brand img={napoleon}/>
+                <Brand img={louisiana}/>
+                <Brand img={traeger}/>
+                <Brand img={firemagic}/>
+                <Brand img={deltaHeat}/>
+                <Brand img={aog}/>
+                <Brand img={viking}/>
+                <Brand img={summerset}/>
+                <Brand img={charBroil}/>
+                <Brand img={luxor}/>
         </Grid>
     );
 };

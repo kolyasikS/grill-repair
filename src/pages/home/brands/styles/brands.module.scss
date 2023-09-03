@@ -36,3 +36,23 @@
     line-height: 130%;
     margin-top: 64px;
 }
+
+@media screen and (max-width: 600px){
+    .section {
+        padding: 64px 0;
+    }
+    .section__title {
+        font-size: 36px;
+        text-align: left;
+        width: 100%;
+    }
+    .section__subtitle {
+        font-size: 16px;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+    }
+    .section__caption {
+        margin-top: 32px;
+    }
+}
