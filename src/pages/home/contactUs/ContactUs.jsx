@@ -6,6 +6,7 @@ import {ReactComponent as ViberIcon} from '@assets/svgs/homePage/viber-white.svg
 import {UnfilledCBtn} from "../../../shared/buttons/api";
 
 import styles from './styles/contactUs.module.scss';
+import {CallUsList} from "@shared/lists/api";
 
 const ContactUs = () => {
     return (
@@ -16,7 +17,7 @@ const ContactUs = () => {
                         <h1 className={styles.section__title}>How it works</h1>
                         <p className={styles.section__subtitle}>Working with us is as easy as one-two-three!</p>
                     </div>
-                    <Stack spacing={3}>
+                    <Stack spacing={3} className={styles.section__stepList}>
                         <div className={styles.section__step}>
                             <div className={styles.section__step_num}>
                                 <span>1</span>
@@ -24,17 +25,25 @@ const ContactUs = () => {
                             <div>
                                 <h3>You contact us</h3>
                                 <p>in any convenient way</p>
-                                <div className={'flex items-center gap-10'}>
+                                <div className={'flex items-center gap-10 mb-2'}>
                                     <p style={{
                                        fontWeight: 600,
                                        fontSize: 20,
                                        lineHeight: '120%'
                                     }} >(949) 910 6556</p>
-                                    <Stack direction={'row'} spacing={2} top={-5} position={'relative'}>
+                                    <Stack direction={'row'} spacing={2}
+                                           sx={{
+                                               display: {
+                                                   md: 'flex',
+                                                   xs: 'none'
+                                               }
+                                           }}
+                                           top={-5} position={'relative'}>
                                         <TelegramIcon/>
                                         <ViberIcon/>
                                     </Stack>
                                 </div>
+                                <CallUsList spacing={2} className={styles.section__callUsList}/>
                             </div>
                         </div>
                         <div className={styles.section__step}>
@@ -57,6 +66,7 @@ const ContactUs = () => {
                         </div>
                     </Stack>
                     <UnfilledCBtn
+                        className={styles.section__scheduleBtn}
                         type={'white'}
                         uppercase={true}
                         fontWeight={800}

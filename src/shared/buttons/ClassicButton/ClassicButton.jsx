@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './index.module.scss';
-const ClassicButton = ({children, color, bgColor,
+const ClassicButton = ({children, color,
+                           width,
+                           bgColor,
                            borderRadius = 55,
                            py = 16,
                            px = 24, border,
@@ -24,6 +26,7 @@ const ClassicButton = ({children, color, bgColor,
     return (
         <button className={`${styles.button} ${className}`} style={{
             display,
+            width,
             background: bgColor,
             borderRadius,
             paddingLeft: px,

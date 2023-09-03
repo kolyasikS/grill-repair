@@ -3,8 +3,15 @@ import {Container} from "@mui/material";
 
 const ClassicContainer = ({children}) => {
     return (
-        <Container maxWidth={false} sx={{maxWidth: 1320}}>
-            {children}
+        <Container maxWidth={false}
+                   sx={{
+                       maxWidth: {
+                           lg: '1300px',
+                           xs: '95%'
+                       }
+                   }}
+        >
+                {children}
         </Container>
     );
 };

@@ -42,4 +42,26 @@
     @extend %cleanCaption;
 }
 
+@media screen and (max-width: 900px) {
+    .section {
+        padding: 64px 0;
+    }
 
+    .section__title {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section {
+        padding: 64px 0;
+    }
+
+    .section__title {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .section__subtitle {
+        font-size: 16px;
+    }
+}

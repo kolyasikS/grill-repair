@@ -20,16 +20,16 @@ function App() {
             {/*<Introduction/>*/}
             {/*<WhyImportant/>*/}
             {/*<BestChoice/>*/}
-            <Equipments/>
-            <Services/>
-            {/*<ContactUs/>
+            {/*<Equipments/>*/}
+            {/*<Services/>*/}
+            <ContactUs/>
             <Discover/>
             <Reviews/>
-            <Brands/>
-            <Offers/>
-            <Promises/>
-            <AboutUs/>
-            <Footer/>*/}
+            {/*<Brands/>*/}
+            {/*<Offers/>*/}
+            {/*<Promises/>*/}
+            {/*<AboutUs/>*/}
+            {/*<Footer/>*/}
         </main>
     );
 }
