@@ -13,7 +13,9 @@ const EquipmentItem = ({image, title}) => {
                       md: 2,
                       xs: 0
                   }}
-                  columnSpacing={3}
+                  columnSpacing={{
+                      sm: 2
+                  }}
             >
                 <Grid sm={5} xs={12} container
                       justifyContent={'center'}

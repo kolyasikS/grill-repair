@@ -21,11 +21,11 @@ const Equipments = () => {
                     <ul className={styles.section__list}>
                         <Grid container
                               ml={{
-                                  sm: 3,
+                                  sm: 1,
                                   xs: 0
                               }}
                               pr={{
-                                  sm: 0,
+                                  sm: 5,
                                   xs: 3,
                               }}
                               columnSpacing={{

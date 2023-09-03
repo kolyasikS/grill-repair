@@ -52,8 +52,7 @@
     }
 }
 
-.redTrapeze
-{
+.redTrapeze {
     @include flexCenter;
     position: absolute;
     top: 20px;
@@ -67,5 +66,37 @@
         font-style: normal;
         font-weight: 600;
         line-height: 130%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blueBlock, .blueBlock::before {
+        width: 290px;
+        height: 95px;
+    }
+    .blueBlock {
+        > p {
+            font-size: 10px;
+            bottom: 10px;
+        }
+    }
+    .redTrapeze {
+        width: 330px;
+        left: -21px;
+        top: 7px;
+        p {
+            font-size: 26px;
+        }
+    }
+    .leftSvg, .rightSvg {
+        width: 68px;
+        height: 75px;
+        bottom: 21px;
+    }
+    .leftSvg {
+        right: -19px;
+    }
+    .rightSvg {
+        left: -21px;
     }
 }

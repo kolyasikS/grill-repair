@@ -105,8 +105,49 @@
 }
 
 .service__factor {
+    display: block;
     padding: 4px 8px;
     border-radius: 50px;
     color: #747474;
     border: 1px solid #747474;
+}
+
+.service__bonus_caption {
+    color: #bc1922;
+    font-size: 20px;
+    font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 64px 0;
+    }
+    .section__title {
+        font-size: 36px;
+        text-align: left;
+        padding: 0;
+    }
+    .section__subtitle {
+        font-size: 24px;
+    }
+
+    .service__bonus {
+        padding: 40px 0 32px;
+    }
+
+    .service__bonus_caption {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .service__notes_title {
+        font-size: 20px;
+    }
+    .service__notes {
+        padding: 0;
+    }
+
+    .service__notes_caption {
+        text-align: center;
+        font-size: 12px;
+    }
 }
