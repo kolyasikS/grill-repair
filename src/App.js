@@ -25,10 +25,10 @@ function App() {
             {/*<ContactUs/>*/}
             {/*<Discover/>*/}
             {/*<Reviews/>*/}
-            <Brands/>
+            {/*<Brands/>*/}
             <Offers/>
             <Promises/>
-            {/*<AboutUs/>*/}
+            <AboutUs/>
             {/*<Footer/>*/}
         </main>
     );

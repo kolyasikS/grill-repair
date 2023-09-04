@@ -6,8 +6,6 @@
     background-position: 800px 0;
     background-size: 100% 100%;
     position: relative;
-    //@include shadowBg(0.5);
-    @include shadowBg(0);
 
     &::after {
         content: '';
@@ -73,5 +71,55 @@
         font-style: normal;
         font-weight: 400;
         max-width: 250px;
+    }
+}
+.section__bottomContent {
+    margin-top: 32px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+@media screen and (max-width: 1200px) {
+    .section {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        background: none;
+        padding: 64px 0;
+    }
+
+    .section__title {
+        font-size: 36px;
+        margin-bottom: 10px;
+    }
+    .section__subtitle {
+        font-size: 16px;
+        margin-bottom: 32px;
+    }
+
+    .section__inner {
+        h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    }
+
+    .section__bottomContent {
+        flex-direction: column;
+        width: 100%;
+
+        button {
+            width: 100%;
+        }
+    }
+    .promise__caption {
+        width: 100%;
+        text-align: center;
+        p {
+            max-width: 100%;
+        }
     }
 }

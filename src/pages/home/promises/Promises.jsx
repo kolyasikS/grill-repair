@@ -5,6 +5,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import PromisesList from "./PromisesList";
 import {Stack} from "@mui/material";
 import {LightRedCBtn, UnfilledCBtn} from "@shared/buttons/api";
+import {CallUsList, SocnetList} from "@shared/lists/api";
 
 const Promises = () => {
     return (
@@ -15,12 +16,26 @@ const Promises = () => {
                     <p className={styles.section__subtitle}>We prioritize our customers and strive to provide you with a 5-star experience.</p>
                     <h2>Our promise to you includes:</h2>
                     <PromisesList/>
-                    <div className={'mt-8 flex gap-12 items-center'}>
+                    <div className={styles.section__bottomContent}>
                         <div className={styles.promise__caption}>
                             <h3>contact us today</h3>
                             <p>to schedule your grill cleaning or receive a quote</p>
                         </div>
-                        <Stack direction={'row'} spacing={5}>
+                        <Stack
+                            direction={{
+                                sm: 'row',
+                                xs: 'column'
+                            }}
+                            sx={{
+                                width: {
+                                    sm: 'fit-content',
+                                    xs: '100%'
+                                }
+                            }}
+                            spacing={{
+                                sm: 5,
+                                xs: 3
+                            }}>
                             <LightRedCBtn
                                 uppercase={true}
                                 discount={{value: 5, type: 'red'}}
@@ -34,6 +49,7 @@ const Promises = () => {
                                 text us: (949) 910 6556</UnfilledCBtn>
                         </Stack>
                     </div>
+                    <SocnetList spacing={2} mt={4}/>
                 </div>
             </ClassicContainer>
         </section>

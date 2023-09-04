@@ -5,10 +5,16 @@ import PromiseItem from "./Promise";
 
 const PromisesList = () => {
     return (
-        <Grid container columnSpacing={3} rowSpacing={3} zIndex={1}
+        <Grid container
+              columnSpacing={{
+                  sm: 3,
+                  xs: 0
+              }}
+              rowSpacing={3} zIndex={1}
               sx={{
                   width: {
-                      xl: '70%'
+                      lg: '70%',
+                      xs: '100%'
                   }
               }}
         >
