@@ -1,0 +1,166 @@
+@import 'src/assets/styles/mixins';
+
+.introduction {
+    @include flexCenter;
+    width: 100%;
+    min-height: 1000px;
+    height: 100vh;
+    position: relative;
+    &::before {
+        content: '';
+        background-image: url("../../../../assets/images/homePage/bg.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        min-height: 1000px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.content__wrapper {
+    position: relative;
+    top: -150px;
+}
+
+.content__subtitle {
+    > p {
+        color: #fff;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150.5%;
+
+        max-width: 600px;
+        margin-bottom: 30px;
+    }
+    position: relative;
+}
+.content {
+    h1 {
+        color: #fff;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 120%;
+    }
+
+}
+.startingAtBtn {
+    position: absolute;
+    left: 260px;
+    bottom: 2px;
+}
+.scheduleBtn {
+}
+
+@media screen and (max-width: 1200px) {
+    .introduction {
+        &::before {
+            background-position: center 100px;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .introduction {
+        min-height: auto;
+        height: 640px;
+        &::before {
+            min-height: auto;
+            background: url("../../../../assets/images/homePage/bg-1850.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
+}
+@media screen and ((min-width: 600px) and (max-width: 900px)) {
+    .introduction {
+        min-height: auto;
+        &::before {
+            background: url("../../../../assets/images/homePage/bg-xs.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .content {
+        h1 {
+            font-size: 56px;
+            margin-bottom: 10px;
+        }
+
+    }
+    .content__subtitle {
+        > p {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+    }
+    .startingAtBtn {
+        position: relative;
+        left: 0;
+        margin-bottom: 20px;
+    }
+    .content__wrapper {
+        top: -80px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .content {
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+    }
+    .content__subtitle {
+        > p {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+    }
+    .content__wrapper {
+        top: -50px;
+    }
+    .introduction {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            bottom: -10px;
+            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
+        }
+    }
+    .scheduleBtn {
+        position: absolute;
+        bottom: -115%;
+        z-index: 1;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    .introduction {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
+        }
+    }
+    .scheduleBtn {
+        padding: 16px 24px;
+        width: 100%;
+        p {
+            font-size: 16px;
+        }
+    }
+}
