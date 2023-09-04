@@ -1,13 +1,32 @@
 import React from 'react';
-import {Divider} from "@mui/material";
+import {Box, Divider} from "@mui/material";
 import styles from './footer.module.scss';
 import {ReactComponent as Logo} from '@assets/svgs/homePage/logo.svg'
 const Footer = () => {
     return (
         <footer className={styles.footer}>
             <Divider/>
-            <div className={'flex justify-between items-center pt-4'}>
-                <div className={'flex items-center gap-6'}>
+            <Box
+                display={'flex'}
+                alignItems={'center'}
+                justifyContent={'space-between'}
+                sx={{
+                    flexDirection: {
+                        sm: 'row',
+                        xs: 'column'
+                    },
+                    alignItems: {
+                        sm: 'center',
+                        xs: 'flex-start'
+                    }
+                }}
+                pt={2}
+                gap={2}
+            >
+                <Box
+                    display={'flex'}
+                    alignItems={'center'}
+                    gap={3}>
                     <div className={styles.footer__logo}>
                         <Logo/>
                     </div>
@@ -15,12 +34,12 @@ const Footer = () => {
                         <p>Copyright © 2023 GrillCleaning.us</p>
                         <p>All Rights Reserved.</p>
                     </div>
-                </div>
+                </Box>
                 <div className={styles.footer__privacy}>
                     <a href={'#'}>Privacy Policy</a>
                     <a href={'#'}>Terms and conditions</a>
                 </div>
-            </div>
+            </Box>
             <p className={styles.footer__caption}>Disclaimer: Our grill cleaning technicians do not clean inside any cabinets, shelving, and/or drawers.</p>
         </footer>
     );
