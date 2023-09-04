@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/grill-repair/static/css/main.4a83246c.css",
+    "main.css": "/grill-repair/static/css/main.13b27e1e.css",
     "main.js": "/grill-repair/static/js/main.6c3500c2.js",
     "static/media/equipment-bg.png": "/grill-repair/static/media/equipment-bg.fa2427ab3d22bfaa0fd4.png",
     "static/media/grill-bg.png": "/grill-repair/static/media/grill-bg.657dd22f5c5d830959b8.png",
@@ -118,11 +118,11 @@
     "static/media/telegram-white.svg": "/grill-repair/static/media/telegram-white.8954289aeec0231a5f8a51a6e9501e47.svg",
     "static/media/telegram.svg": "/grill-repair/static/media/telegram.83de713e620ccca70806a88a699a776c.svg",
     "index.html": "/grill-repair/index.html",
-    "main.4a83246c.css.map": "/grill-repair/static/css/main.4a83246c.css.map",
+    "main.13b27e1e.css.map": "/grill-repair/static/css/main.13b27e1e.css.map",
     "main.6c3500c2.js.map": "/grill-repair/static/js/main.6c3500c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a83246c.css",
+    "static/css/main.13b27e1e.css",
     "static/js/main.6c3500c2.js"
   ]
 }
