@@ -3,7 +3,7 @@
 .section {
     padding: 200px 0 150px 0;
     position: relative;
-    min-height: 2200px;
+    min-height: 2400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -83,13 +83,17 @@
     .section {
         min-height: 2400px;
         &::before {
-            height: 95%;
+            height: 93%;
         }
         &::after {
-            height: 95%;
+            height: 90%;
         }
         background: #06082a;
         z-index: 0;
+
+        button {
+            width: 90%;
+        }
     }
     .section__title {
         font-size: 32px;
