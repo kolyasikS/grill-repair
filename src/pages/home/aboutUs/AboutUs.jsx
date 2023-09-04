@@ -14,20 +14,37 @@ const AboutUs = () => {
     return (
         <section className={styles.section}>
             <ClassicContainer >
-                <Grid container
-                      >
-                    <Grid xl={6} xlOffset={6.3}
+                <Grid container justifyContent={'center'}>
+                    <Grid
+                          xl={6}
+                          lg={7}
+                          md={8}
+                          xs={12}
+                          xlOffset={6.5}
                           className={styles.section__inner}
-                          py={12} gap={4}>
+                          py={{
+                              sm: 12,
+                              xs: 8
+                          }}
+                          gap={4}
+                    >
                         <h1 className={styles.section__title}>About Us</h1>
                         <div className={styles.section__description}>
                             <p>We specialize in providing top-quality cleaning services for all types of grills, from gas and charcoal to pellet and electric. With our team of experienced technicians, we guarantee to leave your grill looking and functioning like new.</p>
                             <p>We pride ourselves on our attention to detail and excellent customer service, and we are committed to exceeding your expectations. </p>
                             <p>Contact us today to schedule your grill cleaning and let us take care of the dirty work for you!</p>
                         </div>
-                        <Stack direction={'row'}
-                               width={'100%'}
-                               justifyContent={'center'} spacing={8}>
+                        <Stack width={'100%'}
+                               direction={{
+                                   sm: 'row',
+                                   xs: 'column'
+                               }}
+                               justifyContent={'center'}
+                               spacing={{
+                                   sm: 8,
+                                   xs: 4
+                               }}
+                        >
                             <div className={styles.section__contacts}>
                                 <img src={telephoneImg} alt=""/>
                                 <div className={styles.section__contacts_content}>
@@ -44,7 +61,25 @@ const AboutUs = () => {
                             </div>
                         </Stack>
                         <Divider color={'#fff'} flexItem/>
-                        <Stack direction={'row'} spacing={4} width={'max-content'}>
+                        <Stack spacing={4}
+                               direction={{
+                                   sm: 'row',
+                                   xs: 'column'
+                               }}
+                               className={styles.section__btnList}
+                               width={'max-content'}
+                               position={'relative'}
+                               sx={{
+                                   left: {
+                                       xl: '-25px',
+                                       xs: 0
+                                   },
+                                   width: {
+                                       xl: 'max-content',
+                                       xs: '100%'
+                                   }
+                               }}
+                        >
                             <UnfilledCBtn
                                 fontSize={14}
                                 px={32}
