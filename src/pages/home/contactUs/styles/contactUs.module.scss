@@ -188,3 +188,12 @@
         padding-top: 65vw;
     }
 }
+
+.contactUs__socnetIconWrapper {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+        background: #1b5e79;
+    }
+}

@@ -33,16 +33,22 @@ const ContactUs = () => {
                                        fontSize: 20,
                                        lineHeight: '120%'
                                     }} >(949) 910 6556</p>
-                                    <Stack direction={'row'} spacing={2}
+                                    <Stack direction={'row'} spacing={0}
                                            sx={{
                                                display: {
                                                    md: 'flex',
                                                    xs: 'none'
                                                }
                                            }}
-                                           top={-5} position={'relative'}>
-                                        <TelegramIcon/>
-                                        <ViberIcon/>
+                                           top={-5}
+                                           left={-10}
+                                           position={'relative'}>
+                                        <div className={styles.contactUs__socnetIconWrapper}>
+                                            <TelegramIcon/>
+                                        </div>
+                                        <div className={styles.contactUs__socnetIconWrapper}>
+                                            <ViberIcon/>
+                                        </div>
                                     </Stack>
                                 </div>
                                 <CallUsList spacing={2} display={isMobileSize ? 'flex' : 'none'}/>
