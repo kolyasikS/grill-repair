@@ -65,10 +65,10 @@ export const ourServices = [
     }
 ]
 
-import equipment1 from "@assets/images/homePage/Frame_1.svg";
-import equipment2 from "@assets/images/homePage/Frame_2.svg";
-import equipment3 from "@assets/images/homePage/Frame_3.svg";
-import equipment4 from "@assets/images/homePage/Frame_4.svg";
+import equipment1 from "@assets/svgs/homePage/Frame_1.svg";
+import equipment2 from "@assets/svgs/homePage/Frame_2.svg";
+import equipment3 from "@assets/svgs/homePage/Frame_3.svg";
+import equipment4 from "@assets/svgs/homePage/Frame_4.svg";
 
 export const ourEquipments = [
     {

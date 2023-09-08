@@ -1,8 +1,9 @@
 import React from 'react';
 import Grid from "@mui/material/Unstable_Grid2";
 import styles from './styles/offer.module.scss';
+import {Icon} from "@mui/material";
 
-const Offer = ({img, title, colorType = 'white'}) => {
+const Offer = ({icon, title, colorType = 'white'}) => {
     return (
         <Grid
             lg={2}
@@ -32,7 +33,7 @@ const Offer = ({img, title, colorType = 'white'}) => {
                 }}
                 className={`${styles.offer} ${colorType === 'white' ? styles.whiteBg : styles.redBg}`}
             >
-                <img src={img} alt=""/>
+                {icon}
                 <h4>{title}</h4>
             </Grid>
         </Grid>
