@@ -33,6 +33,8 @@ const Introduction = () => {
                             <ClassicButton
                                 className={styles.startingAtBtn}
                                 display={'inline-flex'}
+                                hoverBgColor={'#dce1e3'}
+                                hoverShadow={'shadow-md shadow-white'}
                                 bgColor={'#fff'}
                                 color={'#000'}
                                 px={24}
@@ -53,6 +55,8 @@ const Introduction = () => {
                                 color: '#fff'
                             }}
                             bgColor={'#EE353F'}
+                            hoverBgColor={'#c0181f'}
+                            hoverShadow={'shadow-lg shadow-red-800'}
                             color={'#fff'}
                             px={isMobileSize ? 24: 32}
                             py={isMobileSize ? 16: 24}

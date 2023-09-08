@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './socnetList.module.scss';
-import twitter from "@assets/images/homePage/twitter.png";
-import instagram from "@assets/images/homePage/instagram.png";
-import facebook from "@assets/images/homePage/facebook.png";
+import {ReactComponent as Twitter} from '@assets/svgs/homePage/TwitterUnfilled.svg';
+import {ReactComponent as Instagram} from '@assets/svgs/homePage/InstagramUnfilled.svg';
+import {ReactComponent as Facebook} from '@assets/svgs/homePage/FacebookUnfilled.svg';
 import {Stack} from "@mui/material";
 
 const SocnetList = ({spacing, ...props}) => {
@@ -16,13 +16,13 @@ const SocnetList = ({spacing, ...props}) => {
                }}
         >
             <div className={`${styles.socnet_item} ${styles.twitterBg}`}>
-                <img src={twitter} alt=""/>
+                <Twitter/>
             </div>
             <div className={`${styles.socnet_item} ${styles.instagramBg}`}>
-                <img src={instagram} alt=""/>
+                <Instagram/>
             </div>
             <div className={`${styles.socnet_item} ${styles.facebookBg}`}>
-                <img src={facebook} alt=""/>
+                <Facebook/>
             </div>
         </Stack>
     );

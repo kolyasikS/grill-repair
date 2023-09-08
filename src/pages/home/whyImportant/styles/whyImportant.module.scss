@@ -62,6 +62,10 @@
     text-decoration-line: underline;
     line-height: 130%;
     text-underline-offset: 4px;
+    transition: color 0.2s;
+    &:hover {
+        color: #40b7f1;
+    }
 }
 
 @media screen and (max-width: 1200px) {

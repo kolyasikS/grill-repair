@@ -1,10 +1,17 @@
 @import "src/assets/styles/mixins";
 .offer {
-
     border-radius: 32px;
     padding: 24px;
     width: 240px;
     height: 200px;
+    cursor: pointer;
+    transition: all 0.2s;
+    z-index: 1;
+    position: relative;
+    &:hover {
+        transform: scale(1.1);
+        border: 4px solid #0b2126;
+    }
 }
 
 .redBg {
@@ -42,4 +49,3 @@
         }
     }
 }
-

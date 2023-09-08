@@ -8,6 +8,7 @@ const SliderDots = ({amount, my, type}) => {
         <Stack direction={'row'} zIndex={1} spacing={2} alignItems={'center'}
                my={typeof my === 'number' ? `${my}px` : my}>
             {[...new Array(amount)].map((_, ind) => <SliderDot
+                key={ind}
                 type={type}
                 active={activeDot === ind} num={ind}
             />)}

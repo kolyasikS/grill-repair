@@ -5,7 +5,7 @@ import Grid from "@mui/material/Unstable_Grid2";
 import {ourBonuses, ourCleaningServices} from "@assets/wordpress";
 import Service from "./Service";
 import Bonus from "./Bonus";
-import {ClassicButton, LightRedCBtn} from "../../../shared/buttons/api";
+import {ClassicButton, LightRedCBtn, UnfilledCBtn} from "../../../shared/buttons/api";
 import styles from './styles/services.module.scss';
 
 const Services = () => {
@@ -67,15 +67,14 @@ const Services = () => {
                         }}
                                gap={3}
                         >
-                            <ClassicButton
+                            <UnfilledCBtn
                                 uppercase={true}
                                 fontSize={16}
                                 fontWeight={800}
-                                border={'2px solid #181B3F'}
-                                p
+                                borderWidth={2}
                             >
                                 text us: (949) 910 6556
-                            </ClassicButton>
+                            </UnfilledCBtn>
                             <LightRedCBtn
                                 uppercase={true}
                                 fontWeight={800}

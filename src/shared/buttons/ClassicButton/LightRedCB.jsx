@@ -8,6 +8,8 @@ const LightRedCb = ({discount, ...props}) => {
             discount={discount}
             color={'#fff'}
             bgColor={'#EE353F'}
+            hoverShadow={'shadow-lg shadow-red-600'}
+            hoverBgColor={'#aa0811'}
         >
             {props.children}
         </ClassicButton>

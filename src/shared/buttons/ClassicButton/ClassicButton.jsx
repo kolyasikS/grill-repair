@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from './index.module.scss';
 const ClassicButton = ({children, color,
+                           hoverColor = color,
+                           hoverBgColor,
+                           hoverShadow,
                            width,
                            bgColor,
                            borderRadius = 55,
@@ -12,7 +15,6 @@ const ClassicButton = ({children, color,
                            display, className,
                            fontSize = 16,
                         }) => {
-    console.log(discount);
     const discountStyle = discount && (discount.type === 'black' ? {
         value: discount.value,
         bgColor: '#000',
@@ -22,19 +24,30 @@ const ClassicButton = ({children, color,
         bgColor: '#BC1922',
         color: '#fff'
     });
-
+    const [bg, setBg] = useState(bgColor);
+    const [colorState, setColor] = useState(color);
     return (
-        <button className={`${styles.button} ${className}`} style={{
-            display,
-            width,
-            background: bgColor,
-            borderRadius,
-            paddingLeft: px,
-            paddingRight: px,
-            paddingTop: py,
-            paddingBottom: py,
-            border,
-        }}>
+        <button className={`${styles.button} ${className} ${bg !== bgColor ? hoverShadow : ''}`}
+                onMouseEnter={() => {
+                    setBg(hoverBgColor);
+                    setColor(hoverColor)
+                }}
+                onMouseLeave={() => {
+                    setBg(bgColor)
+                    setColor(color)
+                }}
+                style={{
+                    display,
+                    width,
+                    background: bg,
+                    borderRadius,
+                    paddingLeft: px,
+                    paddingRight: px,
+                    paddingTop: py,
+                    paddingBottom: py,
+                    border,
+                }}
+        >
             {discountStyle &&
                 <span
                     style={{
@@ -47,7 +60,7 @@ const ClassicButton = ({children, color,
                 </span>
             }
             <p style={{
-                color,
+                color: colorState,
                 fontFamily,
                 fontWeight,
                 fontSize,

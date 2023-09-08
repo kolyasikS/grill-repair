@@ -49,7 +49,6 @@ const Promises = () => {
                                 text us: (949) 910 6556</UnfilledCBtn>
                         </Stack>
                     </div>
-                    <SocnetList spacing={2} mt={4}/>
                 </div>
             </ClassicContainer>
         </section>
