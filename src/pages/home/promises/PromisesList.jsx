@@ -13,6 +13,7 @@ const PromisesList = () => {
               rowSpacing={3} zIndex={1}
               sx={{
                   width: {
+                      xl: '60%',
                       lg: '70%',
                       xs: '100%'
                   }

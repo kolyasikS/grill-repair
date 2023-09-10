@@ -3,7 +3,7 @@
 .section {
     padding: 200px 0 150px 0;
     position: relative;
-    min-height: 2200px;
+    min-height: 2400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,13 +68,21 @@
     }
 }
 
+@media screen and (max-width: 1536px) {
+    .section {
+        min-height: 2200px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .section {
+        min-height: 2450px;
         padding-bottom: 50px;
     }
 }
 @media screen and (max-width: 900px) {
     .section {
+        min-height: 2600px;
         padding-top: 600px;
     }
     .section__title {
@@ -85,17 +93,22 @@
 
 @media screen and (max-width: 600px) {
     .section {
-        min-height: 2400px;
+        min-height: 2500px;
         &::before {
-            height: 95%;
+            height: 92%;
         }
         &::after {
-            height: 95%;
+            height: 90%;
         }
         background: #06082a;
         z-index: 0;
     }
     .section__title {
         font-size: 32px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .section {
+        min-height: 2400px;
     }
 }

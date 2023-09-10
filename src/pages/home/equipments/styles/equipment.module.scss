@@ -4,8 +4,8 @@
     @include flexCenter();
     background-image: url("../../../../assets/images/homePage/equipment-bg.png");
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-position: center -400px;
+    background-size: auto 220%;
     padding: 150px 0px;
     position: relative;
     @include shadowBg(0.5);
@@ -41,8 +41,11 @@
         z-index: -1;
     }
 }
-
 @media screen and (max-width: 1200px) {
+    .section {
+        background-position: center -300px;
+        background-size: auto 200%;
+    }
     .section__list {
         &::before {
             width: 50vw;
@@ -50,6 +53,18 @@
     }
     .section__title {
         font-size: 48px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section {
+        background-position: center -130px;
+        background-size: auto 140%;
+        padding: 0px 0;
+    }
+    .section__list {
+        &::before {
+            width: 50vw;
+        }
     }
 }
 @media screen and (max-width: 600px) {

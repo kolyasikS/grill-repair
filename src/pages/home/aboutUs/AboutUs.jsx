@@ -18,7 +18,7 @@ const AboutUs = () => {
                           lg={7}
                           md={8}
                           xs={12}
-                          xlOffset={6.5}
+                          xlOffset={6}
                           className={styles.section__inner}
                           py={{
                               sm: 12,
