@@ -1,14 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import Header from "./Header";
 import styles from './styles/introduction.module.scss';
-import {ClassicButton} from "../../../shared/buttons/api";
+import {ClassicButton, SliderDots} from "../../../shared/buttons/api";
 import {Box, Container, useMediaQuery} from "@mui/material";
 import InfoPanel from "./InfoPanel";
 const Introduction = () => {
     const isMobileSize = useMediaQuery('(max-width: 600px)');
 
     return (
-        <section className={styles.introduction}>
+        <section className={styles.section}>
             <Container maxWidth={'lg'}>
                 <Header/>
                 <Box
@@ -68,6 +68,9 @@ const Introduction = () => {
                         </ClassicButton>
                     </div>
                 </Box>
+                <div className={styles.sliderDots_wrapper}>
+                    <SliderDots amount={5} type={'white'} className={styles.sliderDots}/>
+                </div>
             </Container>
             <InfoPanel/>
         </section>

@@ -1,6 +1,6 @@
 @import 'src/assets/styles/mixins';
 
-.introduction {
+.section {
     @include flexCenter;
     width: 100%;
     min-height: 1000px;
@@ -57,16 +57,25 @@
 }
 .scheduleBtn {
 }
-
+.sliderDots_wrapper {
+    position: absolute;
+    bottom: -45px;
+    @include flexCenter();
+    padding-right: 16px;
+    width: 100%;
+}
+.sliderDots {
+    position: relative;
+}
 @media screen and (max-width: 1200px) {
-    .introduction {
+    .section {
         &::before {
             background-position: center 100px;
         }
     }
 }
 @media screen and (max-width: 600px) {
-    .introduction {
+    .section {
         min-height: auto;
         height: 640px;
         &::before {
@@ -79,7 +88,7 @@
     }
 }
 @media screen and ((min-width: 600px) and (max-width: 900px)) {
-    .introduction {
+    .section {
         min-height: auto;
         &::before {
             background: url("../../../../assets/images/homePage/bg-xs.webp");
@@ -129,14 +138,15 @@
     .content__wrapper {
         top: -50px;
     }
-    .introduction {
+    .section {
+        margin-bottom: 100px;
         &::after {
             content: '';
             position: absolute;
             width: 100%;
             height: 200px;
-            bottom: -10px;
-            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
+            bottom: -100px;
+            background: linear-gradient(0deg, #181B3F 50%, #181B4010 100%)
         }
     }
     .scheduleBtn {
@@ -147,7 +157,7 @@
     }
 }
 @media screen and (max-width: 400px) {
-    .introduction {
+    .section {
         &::after {
             content: '';
             position: absolute;
