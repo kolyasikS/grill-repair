@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import Header from "./Header";
 import styles from './styles/introduction.module.scss';
-import bg from '@assets/images/homePage/bg.jpeg';
 import {ClassicButton} from "../../../shared/buttons/api";
 import {Box, Container, useMediaQuery} from "@mui/material";
 import InfoPanel from "./InfoPanel";

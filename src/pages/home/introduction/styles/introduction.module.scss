@@ -8,7 +8,7 @@
     position: relative;
     &::before {
         content: '';
-        background-image: url("../../../../assets/images/homePage/bg.jpeg");
+        background-image: url("../../../../assets/images/homePage/bg.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -71,7 +71,7 @@
         height: 640px;
         &::before {
             min-height: auto;
-            background: url("../../../../assets/images/homePage/bg-1850.png");
+            background: url("../../../../assets/images/homePage/bg-1850.webp");
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center bottom;
@@ -82,7 +82,7 @@
     .introduction {
         min-height: auto;
         &::before {
-            background: url("../../../../assets/images/homePage/bg-xs.png");
+            background: url("../../../../assets/images/homePage/bg-xs.webp");
             background-size: 100% auto;
             background-repeat: no-repeat;
             background-position: center;

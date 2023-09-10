@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./styles/infoPanel.module.scss";
-import clock from '@assets/images/homePage/clock.png';
-import telephone from '@assets/images/homePage/telephone.png';
-import email from '@assets/images/homePage/email.png';
+import clock from '@assets/images/homePage/clock.webp';
+import telephone from '@assets/images/homePage/telephone.webp';
+import email from '@assets/images/homePage/email.webp';
 import {Divider, Stack, useMediaQuery} from "@mui/material";
 import {UnfilledCBtn} from "@shared/buttons/api";
 import {CallUsList} from "@shared/lists/api";

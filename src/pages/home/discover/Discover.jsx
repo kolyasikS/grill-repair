@@ -4,8 +4,8 @@ import {ClassicContainer} from "@widgets/api";
 import Grid from "@mui/material/Unstable_Grid2";
 import {Stack} from "@mui/material";
 import {LightRedCBtn, SliderDots, UnfilledCBtn} from "@shared/buttons/api";
-import beforeCleanImg from '@assets/images/homePage/before-clean.png';
-import afterCleanImg from '@assets/images/homePage/after-clean.png';
+import beforeCleanImg from '@assets/images/homePage/before-clean.webp';
+import afterCleanImg from '@assets/images/homePage/after-clean.webp';
 const Discover = () => {
     return (
         <section className={styles.section}>

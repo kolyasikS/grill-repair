@@ -1,7 +1,7 @@
-import harmfulBacteria_1 from '@assets/images/homePage/harmful_carcinogens_1.png';
-import harmfulBacteria_2 from '@assets/images/homePage/harmful_carcinogens_2.png';
-import harmfulBacteria_3 from '@assets/images/homePage/harmful_carcinogens_3.png';
-import harmfulBacteria_4 from '@assets/images/homePage/harmful_carcinogens_4.png';
+import harmfulBacteria_1 from '@assets/images/homePage/harmful_carcinogens_1.webp';
+import harmfulBacteria_2 from '@assets/images/homePage/harmful_carcinogens_2.webp';
+import harmfulBacteria_3 from '@assets/images/homePage/harmful_carcinogens_3.webp';
+import harmfulBacteria_4 from '@assets/images/homePage/harmful_carcinogens_4.webp';
 import * as uuid from 'uuid';
 export const importantFactors = [
     {
@@ -43,9 +43,9 @@ export const importantFactors = [
     }
 ]
 
-import benefit_1 from '@assets/images/homePage/benefit_1.png';
-import benefit_2 from '@assets/images/homePage/benefit_2.png';
-import benefit_3 from '@assets/images/homePage/benefit_3.png';
+import benefit_1 from '@assets/images/homePage/benefit_1.webp';
+import benefit_2 from '@assets/images/homePage/benefit_2.webp';
+import benefit_3 from '@assets/images/homePage/benefit_3.webp';
 
 export const ourServices = [
     {
@@ -93,14 +93,14 @@ export const ourEquipments = [
     },
 ]
 
-import vacuumCleaner from '@assets/images/homePage/vacuum_cleaner.png';
-import hairdryer from '@assets/images/homePage/hairdryer.png';
-import brush from '@assets/images/homePage/brush.png';
-import vacuuming from '@assets/images/homePage/vacuuming.png';
-import sprayer from '@assets/images/homePage/sprayer.png';
-import boltcutter from '@assets/images/homePage/boltcutter.png';
-import bacteria from '@assets/images/homePage/bacteria.png';
-import sponge from '@assets/images/homePage/sponge.png';
+import vacuumCleaner from '@assets/images/homePage/vacuum_cleaner.webp';
+import hairdryer from '@assets/images/homePage/hairdryer.webp';
+import brush from '@assets/images/homePage/brush.webp';
+import vacuuming from '@assets/images/homePage/vacuuming.webp';
+import sprayer from '@assets/images/homePage/sprayer.webp';
+import boltcutter from '@assets/images/homePage/boltcutter.webp';
+import bacteria from '@assets/images/homePage/bacteria.webp';
+import sponge from '@assets/images/homePage/sponge.webp';
 export const ourCleaningServices = [
     {
         id: uuid.v4(),
@@ -152,11 +152,11 @@ export const ourCleaningServices = [
     },
 ];
 
-import unclogging from '@assets/images/homePage/unclogging.png';
-import polishing from '@assets/images/homePage/polishing.png';
-import inspection from '@assets/images/homePage/inspection.png';
-import tuneUp from '@assets/images/homePage/tune-up.png';
-import seasoning from '@assets/images/homePage/seasoning.png';
+import unclogging from '@assets/images/homePage/unclogging.webp';
+import polishing from '@assets/images/homePage/polishing.webp';
+import inspection from '@assets/images/homePage/inspection.webp';
+import tuneUp from '@assets/images/homePage/tune-up.webp';
+import seasoning from '@assets/images/homePage/seasoning.webp';
 export const ourBonuses = [
     {
         id: uuid.v4(),
@@ -190,9 +190,9 @@ export const ourBonuses = [
     }
 ]
 
-import rebeca from '@assets/images/homePage/rebeca.png';
-import mark from '@assets/images/homePage/mark.png';
-import ashley from '@assets/images/homePage/ashley.png';
+import rebeca from '@assets/images/homePage/rebeca.webp';
+import mark from '@assets/images/homePage/mark.webp';
+import ashley from '@assets/images/homePage/ashley.webp';
 export const ourReviews = [
     {
         id: uuid.v4(),

@@ -3,8 +3,8 @@ import styles from './styles/aboutUs.module.scss';
 import {ClassicContainer} from "@widgets/api";
 import {Divider, Stack} from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import telephoneImg from '@assets/images/homePage/telephone.png';
-import emailImg from '@assets/images/homePage/email.png';
+import telephoneImg from '@assets/images/homePage/telephone.webp';
+import emailImg from '@assets/images/homePage/email.webp';
 import {ClassicButton, UnfilledCBtn} from "@shared/buttons/api";
 import {SocnetList} from "@shared/lists/api";
 

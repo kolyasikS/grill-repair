@@ -2,7 +2,7 @@
 
 .section {
     @include flexCenter();
-    background-image: url("../../../../assets/images/homePage/equipment-bg.png");
+    background-image: url("../../../../assets/images/homePage/equipment-bg.webp");
     background-repeat: no-repeat;
     background-position: center -400px;
     background-size: auto 220%;
@@ -79,7 +79,7 @@
             position: absolute;
             display: block;
             bottom: 0;
-            background-image: url("../../../../assets/images/homePage/equipment-bg.png");
+            background-image: url("../../../../assets/images/homePage/equipment-bg.webp");
             background-repeat: no-repeat;
             background-position: center -60px;
             background-size: 100% ;
@@ -109,7 +109,7 @@
         &::after {
             content: '';
             position: absolute;
-            background: url("../../../../assets/images/homePage/equipment-bg2.jpeg");
+            background: url("../../../../assets/images/homePage/equipment-bg2.webp");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
