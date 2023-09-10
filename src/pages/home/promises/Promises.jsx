@@ -10,7 +10,7 @@ import {CallUsList, SocnetList} from "@shared/lists/api";
 const Promises = () => {
     return (
         <section className={styles.section}>
-            <ClassicContainer>
+            <ClassicContainer xl={'1536px'}>
                 <div className={styles.section__inner}>
                     <h1 className={styles.section__title}>Our Commitment to You: A Promise of Exceptional Grill Cleaning Service</h1>
                     <p className={styles.section__subtitle}>We prioritize our customers and strive to provide you with a 5-star experience.</p>
@@ -49,7 +49,6 @@ const Promises = () => {
                                 text us: (949) 910 6556</UnfilledCBtn>
                         </Stack>
                     </div>
-                    <SocnetList spacing={2} mt={4}/>
                 </div>
             </ClassicContainer>
         </section>

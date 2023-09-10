@@ -22,7 +22,7 @@ const Reviews = () => {
                           }}
                           justifyContent={'center'}
                           columnSpacing={{
-                              lg: 8,
+                              lg: 5,
                               xs: 0
                           }}
                           rowSpacing={{

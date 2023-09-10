@@ -5,13 +5,26 @@
     width: 72px;
     height: 72px;
     border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+
 }
 
 .twitterBg {
     background: #3CF;
+    &:hover {
+        background: #0a0e2b;
+    }
 }
 .instagramBg {
-    background: linear-gradient(315deg, #FBE18A 0.96%, #FCBB45 21.96%, #F75274 38.96%, #D53692 52.96%, #8F39CE 74.96%, #5B4FE9 100.96%);}
+    background: linear-gradient(315deg, #FBE18A 0.96%, #FCBB45 21.96%, #F75274 38.96%, #D53692 52.96%, #8F39CE 74.96%, #5B4FE9 100.96%);
+    &:hover {
+        background: linear-gradient(0deg, #0a0e2b 100%, #0a0e2b 100%);
+    }
+}
 .facebookBg {
     background: #337FFF;
+    &:hover {
+        background: #0a0e2b;
+    }
 }

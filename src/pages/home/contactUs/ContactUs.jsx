@@ -1,6 +1,6 @@
 import React from 'react';
 import {ClassicContainer} from "@widgets/api";
-import {Stack} from "@mui/material";
+import {Stack, useMediaQuery} from "@mui/material";
 import {ReactComponent as TelegramIcon} from '@assets/svgs/homePage/telegram-white.svg';
 import {ReactComponent as ViberIcon} from '@assets/svgs/homePage/viber-white.svg';
 import {UnfilledCBtn} from "../../../shared/buttons/api";
@@ -9,6 +9,8 @@ import styles from './styles/contactUs.module.scss';
 import {CallUsList} from "@shared/lists/api";
 
 const ContactUs = () => {
+    const isMobileSize = useMediaQuery('(max-width: 600px)');
+
     return (
         <section className={styles.section}>
             <ClassicContainer>
@@ -31,19 +33,25 @@ const ContactUs = () => {
                                        fontSize: 20,
                                        lineHeight: '120%'
                                     }} >(949) 910 6556</p>
-                                    <Stack direction={'row'} spacing={2}
+                                    <Stack direction={'row'} spacing={0}
                                            sx={{
                                                display: {
                                                    md: 'flex',
                                                    xs: 'none'
                                                }
                                            }}
-                                           top={-5} position={'relative'}>
-                                        <TelegramIcon/>
-                                        <ViberIcon/>
+                                           top={-5}
+                                           left={-10}
+                                           position={'relative'}>
+                                        <div className={styles.contactUs__socnetIconWrapper}>
+                                            <TelegramIcon/>
+                                        </div>
+                                        <div className={styles.contactUs__socnetIconWrapper}>
+                                            <ViberIcon/>
+                                        </div>
                                     </Stack>
                                 </div>
-                                <CallUsList spacing={2} className={styles.section__callUsList}/>
+                                <CallUsList spacing={2} display={isMobileSize ? 'flex' : 'none'}/>
                             </div>
                         </div>
                         <div className={styles.section__step}>

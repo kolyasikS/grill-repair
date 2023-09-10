@@ -1,8 +1,9 @@
 @import 'src/assets/styles/mixins';
 
 .section {
-    background: url("../../../../assets/images/homePage/aboutUs-bg.jpeg");
-    background-size: 110% 100%;
+    background: url("../../../../assets/images/homePage/aboutUs-bg.webp");
+    background-size: auto 120%;
+    background-position: center 0;
     background-repeat: no-repeat;
 }
 
@@ -78,7 +79,7 @@
 }
 @media screen and (max-width: 1536px) {
     .section {
-        background: none;
+        background: #fff;
         width: 100%;
         align-items: center;
         justify-content: center;

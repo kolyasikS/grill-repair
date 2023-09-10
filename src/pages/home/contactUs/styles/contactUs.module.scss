@@ -23,7 +23,7 @@
         height: 100%;
         top: 0;
         right: 0;
-        background-image: url('../../../../assets/images/homePage/contactUs-bg.jpeg');
+        background-image: url('../../../../assets/images/homePage/contactUs-bg.webp');
         background-repeat: no-repeat;
         background-position: 400px -230px;
         background-size: 90% 160%;
@@ -186,5 +186,14 @@
     }
     .section__stepList {
         padding-top: 65vw;
+    }
+}
+
+.contactUs__socnetIconWrapper {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 50%;
+    &:hover {
+        background: #1b5e79;
     }
 }

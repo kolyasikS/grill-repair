@@ -2,9 +2,9 @@
 
 .section {
     padding: 140px 0;
-    background: url("../../../../assets/images/homePage/promise-bg.jpeg") no-repeat;
-    background-position: 800px 0;
-    background-size: 100% 100%;
+    background: url("../../../../assets/images/homePage/promise-bg.webp") no-repeat;
+    background-position: 900px 0;
+    background-size: auto 100%;
     position: relative;
 
     &::after {
@@ -37,7 +37,7 @@
 .section__title {
     @include sectionTitle(#fff, 64px);
     z-index: 1;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .section__subtitle {
@@ -78,6 +78,12 @@
     display: flex;
     gap: 48px;
     align-items: center;
+}
+
+@media screen and (max-width: 1536px) {
+    .section {
+        background-position: 700px 0;
+    }
 }
 @media screen and (max-width: 1200px) {
     .section {

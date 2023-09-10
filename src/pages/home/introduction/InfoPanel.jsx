@@ -1,15 +1,13 @@
 import React from 'react';
 import styles from "./styles/infoPanel.module.scss";
-import clock from '@assets/images/homePage/clock.png';
-import telephone from '@assets/images/homePage/telephone.png';
-import email from '@assets/images/homePage/email.png';
-
-import telegram from '@assets/images/homePage/Telegram.png';
-import messenger from '@assets/images/homePage/Messenger.png';
-import whatsapp from '@assets/images/homePage/Whatsapp.png';
-import {Divider, Stack} from "@mui/material";
+import clock from '@assets/images/homePage/clock.webp';
+import telephone from '@assets/images/homePage/telephone.webp';
+import email from '@assets/images/homePage/email.webp';
+import {Divider, Stack, useMediaQuery} from "@mui/material";
 import {UnfilledCBtn} from "@shared/buttons/api";
+import {CallUsList} from "@shared/lists/api";
 const InfoPanel = () => {
+    const isMobileSize = useMediaQuery('(max-width: 900px)');
     return (
         <Stack
             direction={{
@@ -20,11 +18,10 @@ const InfoPanel = () => {
                 md: 0,
                 xs: 1
             }}
-            sx={{}}
-            divider={<Divider orientation={{
-                md: 'vertical',
-                xs: 'horizontal'
-            }} color={'#fff'} flexItem/>}
+            sx={{
+                zIndex: 10
+            }}
+            divider={<Divider orientation={isMobileSize ? 'horizontal' : 'vertical'}  color={'#fff'} flexItem/>}
             className={styles.infoPanel}
         >
             <div className={styles.infoPanelItem}>
@@ -45,17 +42,7 @@ const InfoPanel = () => {
                 <div>
                     <h3>call or text us</h3>
                     <p className={'mb-4'}>(949) 910 6556</p>
-                    <Stack direction={'row'} spacing={2}>
-                        <a href="#">
-                            <img src={telegram} alt=""/>
-                        </a>
-                        <a href="#">
-                            <img src={messenger} alt=""/>
-                        </a>
-                        <a href="#">
-                            <img src={whatsapp} alt=""/>
-                        </a>
-                    </Stack>
+                    <CallUsList spacing={3}/>
                 </div>
             </div>
             <div className={styles.infoPanelItem}>
@@ -68,8 +55,6 @@ const InfoPanel = () => {
                     <UnfilledCBtn
                         py={14}
                         px={18}
-                        type={'black'}
-                        borderWidth={2}
                     >
                         contact us
                     </UnfilledCBtn>

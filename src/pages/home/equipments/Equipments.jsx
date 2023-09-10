@@ -45,7 +45,7 @@ const Equipments = () => {
                                   xs: 2
                               }}
                         >
-                            {ourEquipments.map((equip) => <EquipmentItem {...equip}/>)}
+                            {ourEquipments.map((equip) => <EquipmentItem key={equip.id} {...equip}/>)}
                         </Grid>
                     </ul>
                 </div>

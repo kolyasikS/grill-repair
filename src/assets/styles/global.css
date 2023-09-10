@@ -6,4 +6,9 @@
 
 body {
     font-family: 'Gilroy', sans-serif;
+    background: #F2F2F2;
+}
+
+* {
+    /*outline: 1px solid red;*/
 }

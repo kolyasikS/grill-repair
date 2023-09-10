@@ -1,6 +1,6 @@
 @import 'src/assets/styles/mixins';
 
-.introduction {
+.section {
     @include flexCenter;
     width: 100%;
     min-height: 1000px;
@@ -8,7 +8,7 @@
     position: relative;
     &::before {
         content: '';
-        background-image: url("../../../../assets/images/homePage/bg.jpeg");
+        background-image: url("../../../../assets/images/homePage/bg.webp");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -57,35 +57,36 @@
 }
 .scheduleBtn {
 }
-
+.sliderDots_wrapper {
+    position: absolute;
+    bottom: 150px;
+    @include flexCenter();
+    padding-right: 16px;
+    width: 100%;
+    left: 0;
+}
+.sliderDots {
+    position: relative;
+}
 @media screen and (max-width: 1200px) {
-    .introduction {
+    .section {
         &::before {
             background-position: center 100px;
         }
     }
-}
-@media screen and (max-width: 600px) {
-    .introduction {
-        min-height: auto;
-        height: 640px;
-        &::before {
-            min-height: auto;
-            background: url("../../../../assets/images/homePage/bg-1850.png");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-        }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: 95px;
     }
 }
 @media screen and ((min-width: 600px) and (max-width: 900px)) {
-    .introduction {
+    .section {
         min-height: auto;
         &::before {
-            background: url("../../../../assets/images/homePage/bg-xs.png");
+            background: url("../../../../assets/images/homePage/bg-xs.webp");
             background-size: 100% auto;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center bottom;
         }
     }
 }
@@ -109,10 +110,25 @@
         margin-bottom: 20px;
     }
     .content__wrapper {
-        top: -80px;
+        top: -180px;
+    }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: 100px;
     }
 }
 @media screen and (max-width: 600px) {
+    .section {
+        min-height: auto;
+        height: 640px;
+        &::before {
+            min-height: auto;
+            background: url("../../../../assets/images/homePage/bg-1850.webp");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
     .content {
         h1 {
             font-size: 32px;
@@ -129,14 +145,15 @@
     .content__wrapper {
         top: -50px;
     }
-    .introduction {
+    .section {
+        margin-bottom: 100px;
         &::after {
             content: '';
             position: absolute;
             width: 100%;
             height: 200px;
-            bottom: -10px;
-            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
+            bottom: -100px;
+            background: linear-gradient(0deg, #181B3F 50%, #181B4010 100%)
         }
     }
     .scheduleBtn {
@@ -145,17 +162,13 @@
         z-index: 1;
         width: 100%;
     }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: -45px;
+    }
 }
 @media screen and (max-width: 400px) {
-    .introduction {
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
-        }
-    }
+
     .scheduleBtn {
         padding: 16px 24px;
         width: 100%;

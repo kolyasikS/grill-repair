@@ -1,21 +1,25 @@
 import React from 'react';
 import styles from './callUsList.module.scss';
-import telegram from "@assets/images/homePage/Telegram.png";
-import messenger from "@assets/images/homePage/Messenger.png";
-import whatsapp from "@assets/images/homePage/Whatsapp.png";
+import {ReactComponent as Telegram} from '@assets/svgs/homePage/Telegram.svg';
+import {ReactComponent as Messenger} from '@assets/svgs/homePage/Messenger.svg';
+import {ReactComponent as Whatsapp} from '@assets/svgs/homePage/Whatsapp.svg';
 import {Stack} from "@mui/material";
-const CallUsList = ({spacing, className}) => {
+const CallUsList = ({spacing, display, className}) => {
     return (
-        <Stack direction={'row'} spacing={spacing} className={className}>
-            <a href="#">
-                <img src={telegram} alt=""/>
-            </a>
-            <a href="#">
-                <img src={messenger} alt=""/>
-            </a>
-            <a href="#">
-                <img src={whatsapp} alt=""/>
-            </a>
+        <Stack direction={'row'} spacing={spacing}
+               sx={{
+                   display
+               }}
+               className={`${styles.icons_stack} ${className}`}>
+            <div className={styles.icon_wrapper}>
+                <Telegram/>
+            </div>
+            <div className={styles.icon_wrapper}>
+                <Messenger/>
+            </div>
+            <div className={styles.icon_wrapper}>
+               <Whatsapp/>
+            </div>
         </Stack>
     );
 };

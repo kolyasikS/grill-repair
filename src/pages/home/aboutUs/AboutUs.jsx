@@ -2,13 +2,11 @@ import React from 'react';
 import styles from './styles/aboutUs.module.scss';
 import {ClassicContainer} from "@widgets/api";
 import {Divider, Stack} from "@mui/material";
-import twitter from '@assets/images/homePage/twitter.png';
-import instagram from '@assets/images/homePage/instagram.png';
-import facebook from '@assets/images/homePage/facebook.png';
 import Grid from "@mui/material/Unstable_Grid2";
-import telephoneImg from '@assets/images/homePage/telephone.png';
-import emailImg from '@assets/images/homePage/email.png';
+import telephoneImg from '@assets/images/homePage/telephone.webp';
+import emailImg from '@assets/images/homePage/email.webp';
 import {ClassicButton, UnfilledCBtn} from "@shared/buttons/api";
+import {SocnetList} from "@shared/lists/api";
 
 const AboutUs = () => {
     return (
@@ -20,7 +18,7 @@ const AboutUs = () => {
                           lg={7}
                           md={8}
                           xs={12}
-                          xlOffset={6.5}
+                          xlOffset={6}
                           className={styles.section__inner}
                           py={{
                               sm: 12,
@@ -85,7 +83,6 @@ const AboutUs = () => {
                                 px={32}
                                 py={24}
                                 type={'red'}
-                                borderWidth={2}
                             >
                                 learn more about our company
                             </UnfilledCBtn>
@@ -93,6 +90,8 @@ const AboutUs = () => {
                                 fontSize={14}
                                 px={32}
                                 py={24}
+                                hoverBgColor={'#252855'}
+                                hoverShadow={'shadow-lg shadow-[#020636]'}
                                 bgColor={'#181B3F'}
                                 color={'#fff'}
                             >
@@ -100,20 +99,7 @@ const AboutUs = () => {
                             </ClassicButton>
                         </Stack>
                         <p className={styles.section__caption}>and enjoy a spotless grill in no time!</p>
-                        <Stack direction={'row'} spacing={5} sx={{
-                            width: '100%',
-                            justifyContent: 'center'
-                        }}>
-                            <div className={`${styles.section__socnet} ${styles.twitterBg}`}>
-                                <img src={twitter} alt=""/>
-                            </div>
-                            <div className={`${styles.section__socnet} ${styles.instagramBg}`}>
-                                <img src={instagram} alt=""/>
-                            </div>
-                            <div className={`${styles.section__socnet} ${styles.facebookBg}`}>
-                                <img src={facebook} alt=""/>
-                            </div>
-                        </Stack>
+                        <SocnetList spacing={5}/>
                     </Grid>
                 </Grid>
             </ClassicContainer>

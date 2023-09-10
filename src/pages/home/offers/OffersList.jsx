@@ -2,11 +2,11 @@ import React from 'react';
 import Grid from "@mui/material/Unstable_Grid2";
 import Offer from "./Offer";
 
-import grillCleaning from '@assets/images/homePage/grill-cleaning.png';
-import grillRepair from '@assets/images/homePage/grill-repair.png';
-import oldGrillRemoval from '@assets/images/homePage/old-grill-removal.png';
-import grillAssembly from '@assets/images/homePage/grill-assembly.png';
-import maintenance from '@assets/images/homePage/maintenance.png';
+import {ReactComponent as GrillCleaning} from '@assets/svgs/homePage/grill-cleaning.svg';
+import {ReactComponent as GrillRepair} from '@assets/svgs/homePage/grill-repair.svg';
+import {ReactComponent as OldGrillRemoval} from '@assets/svgs/homePage/old-grill-removal.svg';
+import {ReactComponent as GrillAssembly} from '@assets/svgs/homePage/grill-assembly.svg';
+import {ReactComponent as Maintenance} from '@assets/svgs/homePage/maintenance.svg';
 
 const OffersList = () => {
     return (
@@ -24,11 +24,11 @@ const OffersList = () => {
               mt={4}
               mb={6}
         >
-            <Offer img={grillCleaning} title={'Grill Cleaning'}/>
-            <Offer img={grillRepair} title={'Grill Repair'} colorType={'red'}/>
-            <Offer img={oldGrillRemoval} title={'Old grill removal'}/>
-            <Offer img={grillAssembly} title={'Grill Assembly'}/>
-            <Offer img={maintenance} title={'Maintenance'}/>
+            <Offer icon={<GrillCleaning/>} title={'Grill Cleaning'}/>
+            <Offer icon={<GrillRepair/>} title={'Grill Repair'} colorType={'red'}/>
+            <Offer icon={<OldGrillRemoval/>} title={'Old grill removal'}/>
+            <Offer icon={<GrillAssembly/>} title={'Grill Assembly'}/>
+            <Offer icon={<Maintenance/>} title={'Maintenance'}/>
         </Grid>
     );
 };
