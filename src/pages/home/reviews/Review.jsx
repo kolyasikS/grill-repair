@@ -5,7 +5,7 @@ import {Rating} from "@mui/material";
 
 const Review = ({name, image, rating, quote}) => {
     return (
-        <Grid lg={4} xs={12} zIndex={1}>
+        <Grid lg={4} xs={12} zIndex={1} >
             <Grid container spacing={0} columns={12}
                   className={styles.review}
                   p={4} columnSpacing={2} flexWrap={'nowrap'}

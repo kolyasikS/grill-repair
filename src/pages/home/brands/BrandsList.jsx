@@ -40,8 +40,8 @@ const BrandsList = () => {
               }}
               justifyContent={'center'}
               columnSpacing={{
-                      sm: 7,
-                      xs: 3
+                  sm: 6,
+                  xs: 3
               }}
               rowSpacing={{
                   sm: 2,

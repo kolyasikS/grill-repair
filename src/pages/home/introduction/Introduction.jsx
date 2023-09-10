@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
-import Header from "./Header";
+import Header from "@widgets/Header/Header";
 import styles from './styles/introduction.module.scss';
-import {ClassicButton, SliderDots} from "../../../shared/buttons/api";
+import {ClassicButton, LightRedCBtn, SliderDots} from "@shared/buttons/api";
 import {Box, Container, useMediaQuery} from "@mui/material";
 import InfoPanel from "./InfoPanel";
 const Introduction = () => {
@@ -46,26 +46,14 @@ const Introduction = () => {
                                 Starting at $279.00
                             </ClassicButton>
                         </div>
-                        <ClassicButton
-                            uppercase={true}
-                            discount={{
-                                value: 5,
-                                bgColor: '#BC1922',
-                                color: '#fff'
-                            }}
-                            bgColor={'#EE353F'}
-                            hoverBgColor={'#c0181f'}
-                            hoverShadow={'shadow-lg shadow-red-800'}
-                            color={'#fff'}
+                        <LightRedCBtn
                             px={isMobileSize ? 24: 32}
                             py={isMobileSize ? 16: 24}
-                            borderRadius={55}
-                            fontWeight={800}
                             fontSize={isMobileSize ? 16 : 20}
                             className={styles.scheduleBtn}
                         >
                             schedule a grill cleaning
-                        </ClassicButton>
+                        </LightRedCBtn>
                     </div>
                 </Box>
                 <div className={styles.sliderDots_wrapper}>

@@ -83,7 +83,6 @@ const AboutUs = () => {
                                 px={32}
                                 py={24}
                                 type={'red'}
-                                borderWidth={2}
                             >
                                 learn more about our company
                             </UnfilledCBtn>
@@ -91,7 +90,7 @@ const AboutUs = () => {
                                 fontSize={14}
                                 px={32}
                                 py={24}
-                                hoverBgColor={'#323cbc'}
+                                hoverBgColor={'#252855'}
                                 hoverShadow={'shadow-lg shadow-[#020636]'}
                                 bgColor={'#181B3F'}
                                 color={'#fff'}

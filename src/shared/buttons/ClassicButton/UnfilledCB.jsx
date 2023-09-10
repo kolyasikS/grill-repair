@@ -1,18 +1,18 @@
 import React, {useMemo} from 'react';
 import ClassicButton from "./ClassicButton";
 
-const UnfilledCb = ({type = 'black',
-                        borderWidth = 1,
+const UnfilledCb = ({type = 'dark',
+                        borderWidth = 2,
                         ...props}) => {
 
     const colorSchema = useMemo(() => {
         switch (type) {
-            case 'black':
+            case 'dark':
                 return {
                     color: '#000',
                     bgColor: 'transparent',
-                    border: `${borderWidth}px solid #000`,
-                    hoverBgColor: '#000',
+                    border: `${borderWidth}px solid #181B3F`,
+                    hoverBgColor: '#181B3F',
                     hoverColor: '#fff',
                     hoverShadow: 'shadow-lg shadow-[#0f0f0f]'
                 };
@@ -22,8 +22,8 @@ const UnfilledCb = ({type = 'black',
                     bgColor: 'transparent',
                     border: `${borderWidth}px solid #fff`,
                     hoverBgColor: '#fff',
-                    hoverColor: '#000',
-                    hoverShadow: 'shadow-lg shadow-[#dce1e3]'
+                    hoverColor: '#BC1922',
+                    hoverShadow: 'shadow-md shadow-[#dce1e3]'
                 }
             case 'red':
                 return {

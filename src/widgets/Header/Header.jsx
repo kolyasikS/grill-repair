@@ -6,7 +6,7 @@ import {ReactComponent as TelegramIcon} from '@assets/svgs/homePage/telegramHead
 import {ReactComponent as ViberIcon} from '@assets/svgs/homePage/viberHeader.svg';
 import {ReactComponent as Logo} from '@assets/svgs/homePage/logo.svg'
 import HeaderLink from "./HeaderLink";
-import {ClassicButton, DarkRedCBtn, LightRedCBtn} from "../../../shared/buttons/api";
+import {ClassicButton, DarkRedCBtn, LightRedCBtn} from "@shared/buttons/api";
 const Header = () => {
 
     return (
@@ -27,19 +27,9 @@ const Header = () => {
                 </nav>
             </div>
             <div className={styles.header__options}>
-                <ClassicButton
-                    bgColor={'#BC1922'}
-                    hoverBgColor={'#6a1132'}
-                    hoverShadow={'shadow-md shadow-red-800'}
-                    color={'#fff'}
-                    px={24}
-                    py={16}
-                    fontWeight={800}
-                    uppercase={true}
-                    borderRadius={55}
-                >
+                <LightRedCBtn>
                     Book online
-                </ClassicButton>
+                </LightRedCBtn>
                 <div className={styles.header__optionsIcons}>
                     <div className={styles.header__optionsIconWrapper}>
                         <TelegramIcon/>

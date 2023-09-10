@@ -55,8 +55,6 @@ const InfoPanel = () => {
                     <UnfilledCBtn
                         py={14}
                         px={18}
-                        type={'black'}
-                        borderWidth={2}
                     >
                         contact us
                     </UnfilledCBtn>

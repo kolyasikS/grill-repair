@@ -59,10 +59,11 @@
 }
 .sliderDots_wrapper {
     position: absolute;
-    bottom: -45px;
+    bottom: 150px;
     @include flexCenter();
     padding-right: 16px;
     width: 100%;
+    left: 0;
 }
 .sliderDots {
     position: relative;
@@ -73,18 +74,9 @@
             background-position: center 100px;
         }
     }
-}
-@media screen and (max-width: 600px) {
-    .section {
-        min-height: auto;
-        height: 640px;
-        &::before {
-            min-height: auto;
-            background: url("../../../../assets/images/homePage/bg-1850.webp");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            background-position: center bottom;
-        }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: 95px;
     }
 }
 @media screen and ((min-width: 600px) and (max-width: 900px)) {
@@ -94,7 +86,7 @@
             background: url("../../../../assets/images/homePage/bg-xs.webp");
             background-size: 100% auto;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: center bottom;
         }
     }
 }
@@ -118,10 +110,25 @@
         margin-bottom: 20px;
     }
     .content__wrapper {
-        top: -80px;
+        top: -180px;
+    }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: 100px;
     }
 }
 @media screen and (max-width: 600px) {
+    .section {
+        min-height: auto;
+        height: 640px;
+        &::before {
+            min-height: auto;
+            background: url("../../../../assets/images/homePage/bg-1850.webp");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: center bottom;
+        }
+    }
     .content {
         h1 {
             font-size: 32px;
@@ -155,17 +162,13 @@
         z-index: 1;
         width: 100%;
     }
+    .sliderDots_wrapper {
+        position: absolute;
+        bottom: -45px;
+    }
 }
 @media screen and (max-width: 400px) {
-    .section {
-        &::after {
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 200px;
-            background: linear-gradient(0deg, #181B3F 0%, #181B4010 100%)
-        }
-    }
+
     .scheduleBtn {
         padding: 16px 24px;
         width: 100%;

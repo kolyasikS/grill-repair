@@ -27,7 +27,7 @@ const ClassicButton = ({children, color,
     const [bg, setBg] = useState(bgColor);
     const [colorState, setColor] = useState(color);
     return (
-        <button className={`${styles.button} ${className} ${bg !== bgColor ? hoverShadow : ''}`}
+        <button className={`${styles.button} ${className} ${bg !== bgColor ? hoverShadow : ''} ${'active:bg'}`}
                 onMouseEnter={() => {
                     setBg(hoverBgColor);
                     setColor(hoverColor)
