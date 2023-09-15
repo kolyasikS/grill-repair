@@ -10,7 +10,6 @@ const Introduction = () => {
     return (
         <section className={styles.section}>
             <Container maxWidth={'lg'}>
-                <Header/>
                 <Box
                     sx={{
                         left: {

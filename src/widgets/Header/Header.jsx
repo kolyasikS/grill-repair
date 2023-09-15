@@ -23,7 +23,7 @@ const Header = () => {
                     <HeaderLink>Gallery</HeaderLink>
                     <HeaderLink>Service areas</HeaderLink>
                     <HeaderLink>Blog</HeaderLink>
-                    <HeaderLink>Contact us</HeaderLink>
+                    <HeaderLink link={'/contacts'}>Contact us</HeaderLink>
                 </nav>
             </div>
             <div className={styles.header__options}>
