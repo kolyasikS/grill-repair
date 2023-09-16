@@ -7,11 +7,11 @@
     }
 }
 
-@mixin sectionTitle($clr: #fff, $fs: 64px) {
+@mixin sectionTitle($clr: #fff, $fs: 64px, $fw: 800) {
     color: $clr;
     font-size: $fs;
     font-style: normal;
-    font-weight: 800;
+    font-weight: $fw;
     line-height: 110%;
 }
 

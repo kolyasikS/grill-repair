@@ -1,15 +1,15 @@
 import React, {useState} from 'react';
 import ClassicButton from "@shared/buttons/ClassicButton/ClassicButton";
 
-const DarkRedCb = ({discount, ...props}) => {
+const GrayCB = ({discount, ...props}) => {
     return (
         <ClassicButton
             {...props}
             discount={discount}
-            color={'#fff'}
-            hoverBgColor={'#EE353F'}
-            hoverShadow={'shadow-md shadow-red-400'}
-            bgColor={'#BC1922'}
+            color={'#000'}
+            hoverBgColor={'#d5d5d5'}
+            hoverShadow={'shadow-md shadow-gray-400'}
+            bgColor={'#F0EFEF'}
 
         >
             {props.children}
@@ -17,4 +17,4 @@ const DarkRedCb = ({discount, ...props}) => {
     );
 };
 
-export default DarkRedCb;
+export default GrayCB;
