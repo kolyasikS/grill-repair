@@ -6,6 +6,28 @@ const paths = require('./paths');
 const chalk = require('react-dev-utils/chalk');
 const resolve = require('resolve');
 
+let x = 4;
+// bad practice :( :( :(
+
+  switch (x) {
+    case 2:
+      console.log('It is 2');
+    case 3:
+      console.log('It is 3');
+  }
+
+// good practise :) :) :)
+
+  switch (x) {
+    case 2:
+      console.log('It is 2');
+      break
+    case 3:
+      console.log('It is 3');
+      break;
+    default:
+  }
+
 const removeWildcardPart = p => p.replace('/*', ''); // add for alias
 
 /**
@@ -148,12 +170,14 @@ function getModules() {
 
   const additionalModulePaths = getAdditionalModulePaths(options);
 
+
   return {
     additionalModulePaths: additionalModulePaths,
     webpackAliases: getWebpackAliases(options),
     jestAliases: getJestAliases(options),
     hasTsConfig,
   };
+
 }
 
 module.exports = getModules();

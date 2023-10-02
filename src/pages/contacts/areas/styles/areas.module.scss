@@ -2,6 +2,8 @@
 
 .section {
     position: relative;
+    background: #fff;
+    z-index: 0;
 }
 .section_title {
     @include sectionTitle(#BC1922, 64px, 700);
