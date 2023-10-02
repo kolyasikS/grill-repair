@@ -340,7 +340,7 @@ export const outContacts = [
     }
 ]
 
-export const ourAreas = [
+export const ourAreasLA = [
     {
         id: uuid.v4(),
         title: 'Los Angeles county'
@@ -360,5 +360,24 @@ export const ourAreas = [
     {
         id: uuid.v4(),
         title: 'Ventura county'
+    },
+]
+
+export const ourAreasSD = [
+    {
+        id: uuid.v4(),
+        title: 'East Country'
+    },
+    {
+        id: uuid.v4(),
+        title: 'South Bay'
+    },
+    {
+        id: uuid.v4(),
+        title: 'Central San Diego'
+    },
+    {
+        id: uuid.v4(),
+        title: 'North Country'
     },
 ]
