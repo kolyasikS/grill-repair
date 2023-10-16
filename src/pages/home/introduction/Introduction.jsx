@@ -3,7 +3,7 @@ import Header from "@widgets/Header/Header";
 import styles from './styles/introduction.module.scss';
 import {ClassicButton, LightRedCBtn, SliderDots} from "@shared/buttons/api";
 import {Box, Container, useMediaQuery} from "@mui/material";
-import InfoPanel from "./InfoPanel";
+import InfoPanel from "./info-panel/InfoPanel";
 const Introduction = () => {
     const isMobileSize = useMediaQuery('(max-width: 600px)');
 
