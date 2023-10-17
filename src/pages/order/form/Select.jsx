@@ -3,17 +3,23 @@ import {orderSelectedItems} from "@assets/wordpress";
 import {FormControlLabel, Radio, RadioGroup, Stack} from "@mui/material";
 const Select = ({value, setValue}) => {
     return (
-
         <RadioGroup
             value={value}
             onChange={(e) => setValue(e.target.value)}
         >
-            <Stack direction={'row'}
-                   sx={{
-                       width: '100%'
-                   }}
-                   justifyContent={'center'}
-                   spacing={7}
+            <Stack
+                direction={{
+                    md: 'row',
+                    xs: 'column'
+                }}
+                sx={{
+                   width: '100%'
+                }}
+                justifyContent={'center'}
+                spacing={{
+                    md: 7,
+                    xs: 1
+                }}
             >
                 {orderSelectedItems.map((item, ind) =>
                     <FormControlLabel key={ind} value={item.value} control={<Radio sx={{

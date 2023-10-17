@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '..//styles/uploadedFile.module.scss'
+import styles from '../styles/uploadedFile.module.scss'
 const UploadedFile = ({src, name, size, progress, remove}) => {
     console.log(size);
     function formatBytes(bytes, decimals = 2) {
